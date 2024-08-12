@@ -55,23 +55,23 @@
                 <div class="mid">
                     <h2>Dores que atuamos</h2>
                     <ul class="accordion">
-                        <li>
-                            <input type="checkbox" name="accordion" id="first" checked>
+                        <li id="accordion-current" class="accordion-item" onclick="changeAccordion(0)">
+                            <input type="checkbox" name="accordion" checked>
                             <label for="first">Unificação de dados</label>
                             <div class="content">Com a SalesOpers, todas as suas fontes de dados de marketing e vendas são unificadas em uma plataforma única. Obtenha uma visão integrada e clara do seu negócio, facilitando a análise e a tomada de decisões estratégicas de maneira eficiente.</div>
                         </li>
-                        <li>
-                            <input type="checkbox" name="accordion" id="second">
+                        <li onclick="changeAccordion(1)" class="accordion-item">
+                            <input type="checkbox" name="accordion">
                             <label for="second">Análise Avançada de KPIs</label>
                             <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
                         </li>
-                        <li>
-                            <input type="checkbox" name="accordion" id="third">
+                        <li onclick="changeAccordion(2)" class="accordion-item">
+                            <input type="checkbox" name="accordion">
                             <label for="third">Previsão e Tendências</label>
                             <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
                         </li>
-                        <li>
-                            <input type="checkbox" name="accordion" id="fourth">
+                        <li onclick="changeAccordion(3)" class="accordion-item">
+                            <input type="checkbox" name="accordion">
                             <label for="fourth">Relatórios Personalizados</label>
                             <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
                         </li>
@@ -81,24 +81,24 @@
                 </div>
                 <div class="slideshow-container">
                     <div class="slideshow">
+                    <div class="slide" id="slide-current">
+                        <img src="img/imgtest1.jpg" />
+                    </div>
+                
                     <div class="slide">
                         <img src="img/imgtest2.jpg" />
                     </div>
                 
                     <div class="slide">
                         <img src="img/imgtest3.jpg" />
-                    </div>
-                
-                    <div class="slide">
-                        <img src="img/imgtest2.jpg" />
                     </div>
 
                     <div class="slide">
-                        <img src="img/imgtest3.jpg" />
+                        <img src="img/imgtest4.jpg" />
                     </div>
                 
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
                     </div>
             </div>       
         </div>

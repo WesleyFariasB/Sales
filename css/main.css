@@ -150,10 +150,16 @@ section .container .center{
     position: relative;
     
 }
+
+#slide-current {
+    display: block;
+}
+
 .slide, .slide2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: none;
   }
   
   .slide img, .slide2 img {
@@ -271,12 +277,12 @@ input[type="checkbox"]{
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
 }
-.accordion input[type="checkbox"]:checked + label + .content {
+.accordion #accordion-current .content {
     max-height: 400px;
     padding: 10px 10px 20px;
 
 }
-.accordion input[type="checkbox"]:checked + label::before{
+.accordion #accordion-current label::before {
     content: '-';
     color: var(--IMPACT-ORANGE, #F24200);
 }
