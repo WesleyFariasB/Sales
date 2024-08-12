@@ -1,0 +1,57 @@
+@font-face{
+    font-family: Borna;
+
+    src: url("Assets/borna-regular-webfont.ttf");
+}
+
+h1{
+    color: #FFF;
+    font-family: Borna;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+h2{
+    color: #FFF;
+    font-family: Borna;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+}
+h3{
+    color: #FFF;
+    font-family: Borna;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+h4{
+    color: #FFF;
+    font-family: Borna;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+h5{
+    color: #FFF;
+    font-family: Borna;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+h6{
+    color: #FFF;
+    font-family: inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
