@@ -26,15 +26,24 @@ function changeAccordion(n) {
  */
 function changeSlide(n) {
   const currentSlide = document.getElementById("slide-current");
+  const currentDot = document.getElementById("dot-current");
 
   if (currentSlide) {
     currentSlide.style.display = "none";
     currentSlide.id = "";
   }
 
+  if (currentDot) {
+    currentDot.id = "";
+  }
+
   const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("slide-dot")
   slides[n].style.display = "block";
   slides[n].id = "slide-current";
+  dots[n].id = "dot-current";
+
+  changeAccordion(n);
 }
 
 /**
