@@ -188,7 +188,11 @@ section .container .center {
 
 }
 
-#slide-current {
+#slide-features {
+  display: block;
+}
+
+#slide-about {
   display: block;
 }
 
@@ -202,7 +206,11 @@ section .container .center {
   align-items: center;
 }
 
-#dot-current::before {
+#slide-features-dot::before {
+  background: var(--IMPACT-ORANGE, #F24200);
+}
+
+#slide-about-dot::before {
   background: var(--IMPACT-ORANGE, #F24200);
 }
 
@@ -211,6 +219,35 @@ section .container .center {
   width: 15px;
   position: relative;
   cursor: pointer;
+}
+
+.arrows {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.arrow-left {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  color: white;
+  height: 30px;
+  background: var(--IMPACT-ORANGE, #F24200);
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  color: white;
+  height: 30px;
+  background: var(--IMPACT-ORANGE, #F24200);
 }
 
 .slide-dot::before {
@@ -412,13 +449,13 @@ input[type="checkbox"] {
   transition: max-height 0.5s, padding 0.5s;
 }
 
-.accordion #accordion-current .content {
+.accordion #accordion-about .content {
   max-height: 400px;
   padding: 10px 10px 20px;
 
 }
 
-.accordion #accordion-current label::before {
+.accordion #accordion-about label::before {
   content: '-';
   color: var(--IMPACT-ORANGE, #F24200);
 }
@@ -547,7 +584,11 @@ input[type="checkbox"] {
 }
 
 .grid {
-  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .slides {
@@ -604,19 +645,12 @@ input[type="checkbox"] {
   color: black;
 }
 
-.teste {
-  position: relative;
-  margin-right: 4rem;
-}
-
 .grid h3 {
   color: #000;
-  margin-top: 5rem;
 }
 
 .grid h5 {
   color: #000;
-  margin-top: 5rem;
 }
 
 .grid a {
@@ -633,7 +667,13 @@ input[type="checkbox"] {
   bottom: -3px;
   margin-right: 2px;
   margin-left: 10px;
+}
 
+.teste {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .nuvem {

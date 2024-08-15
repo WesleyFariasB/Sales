@@ -1,32 +1,38 @@
+const ACCORDION_ABOUT = 'accordion-about'
+const SLIDE_ABOUT = 'slide-about'
+const SLIDE_FEATURES = 'slide-features'
+
 /**
  * Change the current accordion item
- * @param {number} n - The index of the accordion item to be displayed
+ * @param {number} number - The index of the accordion item to be displayed
+ * @param {string} name - The name of the accordion that will be changed
+ * @param {string} slideName - The name of the slide that will be changed on accordion change
  */
-function changeAccordion(n) {
-  const currentAccordion = document.getElementById("accordion-current");
+function changeAccordion(number, name, slideName) {
+  const currentAccordion = document.getElementById(name);
 
   if (currentAccordion) {
     const currentAccordionContent = currentAccordion.getElementsByClassName("content")[0];
-
     currentAccordionContent.style.transition = "max-height 0.2s, padding 0.5s";
   }
 
   currentAccordion.id = "";
 
-  const accordionItems = document.getElementsByClassName("accordion-item");
-  accordionItems[n].id = "accordion-current";
-  accordionItems[n].style.display = "block";
+  const accordionItems = document.getElementsByClassName(`${name}-item`);
+  accordionItems[number].id = name;
+  accordionItems[number].style.display = "block";
 
-  changeSlide(n);
+  changeSlide(number, slideName);
 }
 
 /**
  * Change the current slide
- * @param {number} n - The index of the slide to be displayed
+ * @param {number} number - The index of the slide to be displayed
+ * @param {string} name
  */
-function changeSlide(n) {
-  const currentSlide = document.getElementById("slide-current");
-  const currentDot = document.getElementById("dot-current");
+function changeSlide(number, name) {
+  const currentSlide = document.getElementById(name);
+  const currentDot = document.getElementById(`${name}-dot`);
 
   if (currentSlide) {
     currentSlide.style.display = "none";
@@ -37,33 +43,31 @@ function changeSlide(n) {
     currentDot.id = "";
   }
 
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("slide-dot")
-  slides[n].style.display = "block";
-  slides[n].id = "slide-current";
-  dots[n].id = "dot-current";
+  const slides = document.getElementsByClassName(`${name}-item`);
+  const dots = document.getElementsByClassName(`${name}-item-dot`)
+  slides[number].style.display = "block";
+  slides[number].id = name;
+  dots[number].id = `${name}-dot`;
 
-  changeAccordion(n);
+  changeAccordion(number);
 }
 
 /**
  * Changes the slide to the next available slide
- * @param {number} n - The index of the slide to be displayed
+ * @param {string} name - The name of the slide that will be changed
  */
-function nextSlide() {
+function nextSlide(name) {
   let slideIndex = 0;
-  const slides = document.getElementsByClassName("slide");
+  const slides = document.getElementsByClassName(`${name}-item`);
 
   console.log(slides);
 
   for (let i = 0; i < slides.length; i++) {
-    if (slides[i].id === "slide-current") {
+    if (slides[i].id === name) {
       slideIndex = i;
       break;
     }
   }
-
-  console.log(slideIndex);
 
   if (slideIndex === slides.length - 1) {
     slideIndex = 0;
@@ -71,19 +75,18 @@ function nextSlide() {
     slideIndex++;
   }
 
-  changeSlide(slideIndex);
-  changeAccordion(slideIndex);
+  changeSlide(slideIndex, name);
 }
 
 /**
  * Changes the slide to the previous available slide
- * @param {number} n - The index of the slide to be displayed
+ * @param {string} name - The name of the slide that will be changed
  */
-function prevSlide() {
+function prevSlide(name) {
   let slideIndex = 0;
-  const slides = document.getElementsByClassName("slide");
+  const slides = document.getElementsByClassName(`${name}-item`);
   for (let i = 0; i < slides.length; i++) {
-    if (slides[i].id === "slide-current") {
+    if (slides[i].id === name) {
       slideIndex = i;
       break;
     }
@@ -95,27 +98,5 @@ function prevSlide() {
     slideIndex--;
   }
 
-  changeSlide(slideIndex);
-  changeAccordion(slideIndex);
-}
-
-
-let slideIndex = [1,1];
-let slideClassNames = ["slides"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideClassNames[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
+  changeSlide(slideIndex, name);
 }
