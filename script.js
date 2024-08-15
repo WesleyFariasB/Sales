@@ -8,7 +8,7 @@ const SLIDE_FEATURES = 'slide-features'
  * @param {number} number - The index of the slide to be displayed
  * @param {string} name
  */
-function changeSlide(number, name, accordionName) {
+function changeSlide(number, name) {
   const currentSlide = document.getElementById(name);
   const currentDot = document.getElementById(`${name}-dot`);
 
@@ -28,6 +28,7 @@ function changeSlide(number, name, accordionName) {
   dots[number].id = `${name}-dot`;
 
 }
+
 function change(number, slideName, accordionName) {
   const currentAccordion = document.getElementById(accordionName);
   const currentSlide = document.getElementById(slideName);
@@ -58,9 +59,8 @@ function change(number, slideName, accordionName) {
   const accordionItems = document.getElementsByClassName(`${accordionName}-item`);
   accordionItems[number].id = accordionName;
   accordionItems[number].style.display = "block";
-
-
 }
+
 /**
  * Changes the slide to the next available slide
  * @param {string} name - The name of the slide that will be changed
@@ -68,8 +68,6 @@ function change(number, slideName, accordionName) {
 function nextSlide(name) {
   let slideIndex = 0;
   const slides = document.getElementsByClassName(`${name}-item`);
-
-  console.log(slides);
 
   for (let i = 0; i < slides.length; i++) {
     if (slides[i].id === name) {
@@ -85,12 +83,13 @@ function nextSlide(name) {
   }
 
   changeSlide(slideIndex, name);
+  changeText()
 }
 
 /**
  * Changes the slide to the previous available slide
  * @param {string} name - The name of the slide that will be changed
- */
+*/
 function prevSlide(name) {
   let slideIndex = 0;
   const slides = document.getElementsByClassName(`${name}-item`);
@@ -100,27 +99,50 @@ function prevSlide(name) {
       break;
     }
   }
-
+  
   if (slideIndex === 0) {
     slideIndex = slides.length - 1;
   } else {
     slideIndex--;
   }
-
+  
   changeSlide(slideIndex, name);
+  changeText()
 }
-function changeText(text, subtext) {
-  const text = document.getElementById('text');
-  const subText = document.getElementById('subtext');
-  const texts = [{
-    text: "Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.", subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
-  Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`}]
 
-  let slideIndex = 0;
-  const slides = document.getElementsByClassName('slide-Features-item');
+function changeText() {
+  const currentText = document.getElementById("text");
+  const currentSubText = document.getElementById('subtext')
+  const texts = [
+    {
+      text: "0 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
+      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+    },
+    {
+      text: "1 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
+      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+    },
+    {
+      text: "2 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
+      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+    },
+    {
+      text: "3 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
+      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+    }
+  ]
+
+  const slides = document.getElementsByClassName('slide-features-item');
+  
   for (let i = 0; i < slides.length; i++) {
     if (slides[i].id === 'slide-features') {
-      slideIndex = i;
+      console.log({currentText, currentSubText})
+      currentText.innerHTML = texts[i].text;
+      currentSubText.innerHTML = texts[i].subText;
       break;
     }
   }
