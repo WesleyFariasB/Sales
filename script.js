@@ -8,7 +8,7 @@ const SLIDE_FEATURES = 'slide-features'
  * @param {number} number - The index of the slide to be displayed
  * @param {string} name
  */
-function changeSlide(number, name,accordionName) {
+function changeSlide(number, name, accordionName) {
   const currentSlide = document.getElementById(name);
   const currentDot = document.getElementById(`${name}-dot`);
 
@@ -28,39 +28,39 @@ function changeSlide(number, name,accordionName) {
   dots[number].id = `${name}-dot`;
 
 }
-  function change(number,slideName,accordionName){
-    const currentAccordion = document.getElementById(accordionName);
-    const currentSlide = document.getElementById(slideName);
-    const currentDot = document.getElementById(`${slideName}-dot`);
+function change(number, slideName, accordionName) {
+  const currentAccordion = document.getElementById(accordionName);
+  const currentSlide = document.getElementById(slideName);
+  const currentDot = document.getElementById(`${slideName}-dot`);
 
-    if (currentSlide) {
-      currentSlide.style.display = "none";
-      currentSlide.id = "";
-    }
-  
-    if (currentDot) {
-      currentDot.id = "";
-    }
-  
-    const slides = document.getElementsByClassName(`${slideName}-item`);
-    const dots = document.getElementsByClassName(`${slideName}-item-dot`)
-    slides[number].style.display = "block";
-    slides[number].id = slideName;
-    dots[number].id = `${slideName}-dot`;
-
-    if (currentAccordion) {
-      const currentAccordionContent = currentAccordion.getElementsByClassName("content")[0];
-      currentAccordionContent.style.transition = "max-height 0.2s, padding 0.5s";
-    }
-  
-    currentAccordion.id = "";
-  
-    const accordionItems = document.getElementsByClassName(`${accordionName}-item`);
-    accordionItems[number].id = accordionName;
-    accordionItems[number].style.display = "block";
-  
-   
+  if (currentSlide) {
+    currentSlide.style.display = "none";
+    currentSlide.id = "";
   }
+
+  if (currentDot) {
+    currentDot.id = "";
+  }
+
+  const slides = document.getElementsByClassName(`${slideName}-item`);
+  const dots = document.getElementsByClassName(`${slideName}-item-dot`)
+  slides[number].style.display = "block";
+  slides[number].id = slideName;
+  dots[number].id = `${slideName}-dot`;
+
+  if (currentAccordion) {
+    const currentAccordionContent = currentAccordion.getElementsByClassName("content")[0];
+    currentAccordionContent.style.transition = "max-height 0.2s, padding 0.5s";
+  }
+
+  currentAccordion.id = "";
+
+  const accordionItems = document.getElementsByClassName(`${accordionName}-item`);
+  accordionItems[number].id = accordionName;
+  accordionItems[number].style.display = "block";
+
+
+}
 /**
  * Changes the slide to the next available slide
  * @param {string} name - The name of the slide that will be changed
@@ -109,10 +109,11 @@ function prevSlide(name) {
 
   changeSlide(slideIndex, name);
 }
-function changeText(text,subtext){
+function changeText(text, subtext) {
   const text = document.getElementById('text');
   const subText = document.getElementById('subtext');
-  const texts = [{text:"Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",subText:`Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+  const texts = [{
+    text: "Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.", subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
   Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`}]
 
   let slideIndex = 0;
