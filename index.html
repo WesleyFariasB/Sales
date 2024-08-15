@@ -64,7 +64,7 @@
                     <h2>Dores que atuamos</h2>
                     <ul class="accordion">
                         <li id="accordion-about" class="accordion-item accordion-about-item"
-                            onclick="changeAccordion(0, 'accordion-about', 'slide-about')">
+                            onclick="change(0, 'accordion-about', 'slide-about')">
                             <input type="checkbox" name="accordion" checked>
                             <label for="first">Unificação de dados</label>
                             <div class="content">Com a SalesOpers, todas as suas fontes de dados de marketing e vendas
@@ -72,7 +72,7 @@
                                 negócio, facilitando a análise e a tomada de decisões estratégicas de maneira eficiente.
                             </div>
                         </li>
-                        <li onclick="changeAccordion(1, 'accordion-about', 'slide-about')"
+                        <li onclick="change(1, 'accordion-about', 'slide-about')"
                             class="accordion-item accordion-about-item">
                             <input type="checkbox" name="accordion">
                             <label for="second">Análise Avançada de KPIs</label>
@@ -80,7 +80,7 @@
                                 impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit
                                 velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
                         </li>
-                        <li onclick="changeAccordion(2, 'accordion-about', 'slide-about')"
+                        <li onclick="change(2, 'accordion-about', 'slide-about')"
                             class="accordion-item accordion-about-item">
                             <input type="checkbox" name="accordion">
                             <label for="third">Previsão e Tendências</label>
@@ -88,7 +88,7 @@
                                 impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit
                                 velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
                         </li>
-                        <li onclick="changeAccordion(3, 'accordion-about', 'slide-about')"
+                        <li onclick="change(3, 'accordion-about', 'slide-about')"
                             class="accordion-item accordion-about-item">
                             <input type="checkbox" name="accordion">
                             <label for="fourth">Relatórios Personalizados</label>
@@ -120,10 +120,10 @@
             </div>
             <div class="slide-dots">
                 <a id="slide-about-dot" class="slide-dot slide-about-item-dot"
-                    onclick="changeSlide(0, 'slide-about')"></a>
-                <a class="slide-dot slide-about-item-dot" onclick="changeSlide(1, 'slide-about')"></a>
-                <a class="slide-dot slide-about-item-dot" onclick="changeSlide(2, 'slide-about')"></a>
-                <a class="slide-dot slide-about-item-dot" onclick="changeSlide(3, 'slide-about')"></a>
+                    onclick="change(0, 'slide-about','accordion-about')"></a>
+                <a class="slide-dot slide-about-item-dot" onclick="change(1, 'slide-about','accordion-about')"></a>
+                <a class="slide-dot slide-about-item-dot" onclick="change(2, 'slide-about','accordion-about')"></a>
+                <a class="slide-dot slide-about-item-dot" onclick="change(3, 'slide-about','accordion-about')"></a>
             </div>
         </div>
     </section>
@@ -264,8 +264,8 @@
                     </div>
                 </div>
                 <div class="teste">
-                    <h3>Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.</h3>
-                    <h5>Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+                    <h3 id="text">Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.</h3>
+                    <h5 id="subtext">Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
                         Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when
                         an<br>unknown printer took.</h5>
 
