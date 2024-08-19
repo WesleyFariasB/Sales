@@ -115,24 +115,20 @@ function changeText() {
   const currentSubText = document.getElementById('subtext')
   const texts = [
     {
-      text: "0 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
-      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
-      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+      text: " Rastreie a origem exata do seu Lead",
+      subText: `Com o SalesOpers, você captura e rastreia com precisão a origem de cada lead, permitindo entender exatamente de onde vêm os seus melhores clientes (ICP). Isso ajuda a otimizar o uso do seu orçamento de marketing, reduzir o CAC e maximizar as vendas. Potencialize seus esforços e obtenha os melhores resultados.`
     },
     {
-      text: "1 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
-      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
-      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+      text: " Análise completa da jornada de vendas",
+      subText: `Entenda como seus leads evoluem, quais interações são mais eficazes e quais ações aceleram o ciclo de vendas. Assim, você pode otimizar o desempenho da sua equipe, aumentar as taxas de conversão e garantir que nenhuma oportunidade seja perdida. Torne seu processo de vendas mais eficiente e previsível.`
     },
     {
-      text: "2 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
-      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
-      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+      text: " Automatize e otimize suas campanhas de marketing",
+      subText: `Nosso sistema identifica automaticamente os padrões de comportamento dos leads e ajusta suas campanhas em tempo real para maximizar resultados. Com base nos dados rastreados ao longo de toda a jornada de vendas, nossa solução automatiza a alocação de recursos, ajusta mensagens e segmentações, e direciona para onde terá mais impacto.`
     },
     {
-      text: "3 Obtenha insights<br>poderosos com análises<br>avançadas de KPIs.",
-      subText: `Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
-      Lorem<br>Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took.`
+      text: " Previsão de resultados de vendas com inteligência de dados",
+      subText: `Ao ajustar suas campanhas em tempo real e entender o comportamento dos seus leads, você obtém uma visão clara do que esperar em termos de conversões e receitas. Isso permite tomar decisões informadas, alinhar seus recursos de vendas e marketing, e garantir que você esteja sempre à frente da concorrência.`
     }
   ]
 
@@ -146,4 +142,18 @@ function changeText() {
       break;
     }
   }
+}
+var acc = document.getElementsByClassName("acordion");
+var i;
+var len = acc.length;
+for (i = 0; i < len; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }

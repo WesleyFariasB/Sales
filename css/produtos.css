@@ -1,0 +1,200 @@
+header {
+    background: #101010;
+    height: 680px;
+    flex-shrink: 0;
+}
+header .container .hero h2 {
+    font-family: Borna-regular;
+}
+header .container .hero h4 {
+    margin-left: 26px;
+    margin-top: 1.5rem;
+    font-family: Borna-regular;
+  }
+  header .container div .btn3 {
+    margin-top: 1.5rem;
+  }
+  header .vendas {
+    margin-top: 1.5rem;
+    position: relative;
+    bottom: 0;
+  }
+  header .container .s-hero h6 {
+    margin-right: 0rem;
+    margin-top: 1.5rem;
+    margin-left: 26px;
+    color: var(--OFF-GRAY, #979696);
+  }
+  .imgsolo{
+    width: 620px;
+    height: 420px;
+    margin-top: 5rem
+  }
+  .mapear{
+    background: var(--OFF-WHITE, #FFF);
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 7rem;
+  }
+  .mapear .colunm .btn3{
+    margin-top: 2rem;
+  }
+  .mapear .colunm .vendas{
+    margin-top: 1.5rem;
+    position: relative;
+    bottom: 0;
+    margin-left: 1rem;
+    color: var(--IMPACT-ORANGE, #F24200);
+  }
+ .mapear .colunm h2{
+    position: relative;
+    color: #101010;
+    font-family: Borna-regular;
+ }
+
+ .mapear .colunm2 h3{
+    position: relative;
+    color: #101010;
+    color: var(--OFF-GRAY, #979696);
+    font-family: Borna-regular;
+ }
+ .mapear .colunm2 h6{
+    position: relative;
+    color: #101010;
+    font-family: Inter;
+    margin-top: 1.5rem;
+ }
+  .setalaranja{
+    position: absolute;
+    left: 25rem;
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+  }
+  .segredos {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+.segredos h2{
+  color: var(--IMPACT-ORANGE, #F24200);
+  font-family: Borna;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+
+}
+.segredos h3{
+  color: var(--OFF-GRAY, #979696);
+  font-family: Borna;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  margin-top: 2.5rem;
+  opacity: 0.4;
+}
+.segredos h6{
+  color: var(--OFF-GRAY, #979696);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 2.5rem;
+}
+.segredos .preto{
+  color: var(--ALL-BLACK, #101010);
+}
+.orangeplus{
+  width: 100%;
+  height: 510px;
+  flex-shrink: 0;
+  background: #F24200;
+  position: relative;
+}
+.orangeplus .container .cacheado{
+  align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.orangeplus .container .cacheado h2{
+  color: #101010;
+  margin-top: -1rem;
+  font-family: Borna;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+.orangeplus .container .cacheado h5{
+  margin-top: 2rem;
+ }
+.orangeplus .container .cacheado .btn3{
+  border: 1px solid var(--IMPACT-ORANGE, #101010);
+  background: var(--IMPACT-ORANGE, #101010);
+  margin-top: 2rem;
+}
+.orangeplus .container .cacheado .vendas{
+  position: relative;
+  bottom: 0;
+  margin-left: 1rem;
+  color: var(--IMPACT-ORANGE, #101010);
+}
+.orangeplus .container .cacheado .sorriso2{
+  width: 550px;
+  height: 600px;
+  flex-shrink: 0;
+  margin-top: -5.6rem;
+}
+.black2{
+  background: var(--ALL-BLACK, #101010);
+  width: 100%;
+  height: 600px;
+  flex-shrink: 0;
+
+}
+.photo{
+  align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+}
+.photo img{
+  margin-top: 7rem;
+}
+.photo .cliente{
+  color: var(--IMPACT-ORANGE, #F24200);
+  font-family: Borna;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+   opacity: 1;
+   margin-top: 8rem;
+}
+.photo h3{
+  color: var(--OFF-GRAY, #979696);
+  opacity: 0.4;
+  font-family: Borna-regular;
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+}
+.photo h6{
+  color: var(--OFF-WHITE, #FFF);
+  font-family: Inter;
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+}

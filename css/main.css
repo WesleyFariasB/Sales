@@ -17,6 +17,7 @@
 .navbar a {
   display: inline-block;
   margin: 15px;
+  font-family: borna;
 }
 
 header .container .navbar .logo img {
@@ -38,7 +39,7 @@ header .container .navbar nav .btn {
   line-height: normal;
   letter-spacing: 0.7px;
   text-transform: uppercase;
-  font-family: Borna-regular;
+  font-family: Borna;
 
 }
 
@@ -151,7 +152,7 @@ header .container .s-hero {
   display: flex;
   position: relative;
   justify-content: space-between;
-
+  margin-top: 2rem;
 }
 
 header .container .s-hero h6 {
@@ -160,10 +161,14 @@ header .container .s-hero h6 {
 }
 
 section {
-  height: 80vh;
+  height: 100vh;
   background: var(--ALL-BLACK, #101010);
   width: 100%;
-  margin-top: 7rem;
+  margin-top: 14rem;
+}
+
+.center{
+  margin-top: -5rem;
 }
 
 section .container .mid h2 {
@@ -172,7 +177,7 @@ section .container .mid h2 {
 }
 
 .container .mid {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 
@@ -197,13 +202,15 @@ section .container .center {
 }
 
 .slide-dots {
-  position: absolute;
   height: 5vh;
   width: 100%;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #101010;
+  margin-top: -12rem;
+  position: relative;
 }
 
 #slide-features-dot::before {
@@ -219,10 +226,12 @@ section .container .center {
   width: 15px;
   position: relative;
   cursor: pointer;
+  
 }
 
 .arrows {
-  margin-top: 15px;
+  position: relative;
+  margin-top: 2.5rem;
   display: flex;
   gap: 15px;
 }
@@ -236,6 +245,7 @@ section .container .center {
   color: white;
   height: 30px;
   background: var(--IMPACT-ORANGE, #F24200);
+  cursor: pointer;
 }
 
 .arrow-right {
@@ -248,6 +258,7 @@ section .container .center {
   color: white;
   height: 30px;
   background: var(--IMPACT-ORANGE, #F24200);
+  cursor: pointer;
 }
 
 .slide-dot::before {
@@ -263,8 +274,6 @@ section .container .center {
 
 .slide,
 .slide2 {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   display: none;
 }
@@ -272,7 +281,7 @@ section .container .center {
 .slide img,
 .slide2 img {
   width: 100%;
-  height: 100%;
+  height: 452px;
   object-fit: cover;
   object-position: center;
 }
@@ -283,11 +292,10 @@ section .container .center .slideshow-container {
 }
 
 .slideshow {
-  border: 1px solid;
   position: relative;
-  width: 600px;
+  width: 665px;
   height: 450px;
-  margin-top: 6.5rem;
+  margin-top: 11rem;
 }
 
 .prev,
@@ -332,7 +340,7 @@ section .container .center .slideshow-container {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.72px;
-  margin-top: 7rem;
+  margin-top: 12rem;
   margin-bottom: 2rem;
 }
 
@@ -414,7 +422,7 @@ section .container .center .slideshow-container {
   display: flex;
   align-items: center;
   padding: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   cursor: pointer;
   color: var(--OFF-GRAY, #979696);
@@ -512,13 +520,15 @@ input[type="checkbox"] {
 }
 
 .laranja .space h1 {
-  margin-top: 10rem;
+  margin-top: 12rem;
   color: #fff;
 }
 
 .laranja .space .btn3 {
   background: var(--ALL-BLACK, #101010);
   margin-left: 0;
+  cursor: pointer;
+
 }
 
 .laranja .space .vendas {
@@ -528,6 +538,7 @@ input[type="checkbox"] {
   font-weight: 400;
   line-height: normal;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .laranja .space a img {
@@ -574,7 +585,6 @@ input[type="checkbox"] {
 .future {
   background-color: #fff;
   width: 100%;
-  height: 1272px;
 }
 
 .future .container .grid {
@@ -650,7 +660,9 @@ input[type="checkbox"] {
 }
 
 .grid h5 {
-  color: #000;
+  margin-top: 2.5rem;
+  color: var(--OFF-GRAY, #979696);
+  font-family: Inter;
 }
 
 .grid a {
@@ -670,12 +682,46 @@ input[type="checkbox"] {
 }
 
 .teste {
-  padding: 30px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  margin-top: 10rem;
+  margin-left: 10rem;
 }
+.future .grid .teste .broken{
+  display: flex;
+}
+.teste .slide-dots{
+  background-color: #FFF;
+  margin-left: -4.5rem;
+  margin-top: -5rem;
 
+}
+.teste .btn3{
+  display: flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  width: 4.5rem;
+  margin-top: 3rem;
+  
+}
+#text{
+  color: var(--ALL-BLACK, #101010);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+.vendas{
+  position: absolute;
+  margin-left: 5rem;
+  bottom: 0.5rem;
+}
+ 
 .nuvem {
   display: flex;
 
@@ -700,6 +746,28 @@ input[type="checkbox"] {
   position: absolute;
   margin-left: 20rem;
 }
+.pai{
+  display: flex;
+  position: relative;
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+.pai img{
+  width: 100%;
+}
+.dual h2{
+  color: #000;
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  color: var(--OFF-GRAY, #979696);
+  font-family: Borna;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
 
 .opers {
   width: 100%;
@@ -715,22 +783,52 @@ input[type="checkbox"] {
   position: relative;
   margin-top: 10rem;
 }
-
+.faqs{
+  margin-top: -3rem;
+}
 .faqs h2 {
   margin-top: 3rem;
+  font-size: 42px;
 }
 
 .faqs .btn3 {
   margin-top: 3rem;
 }
-
-.container-fluid {
-  margin: 0 auto;
+.right2{
+  margin-top: -4rem;
+  margin-left: 20rem;
 }
 
-.container-fluid h2 {
+.containerFluid {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.containerFluid h2 {
   color: #F24200;
   position: relative;
+  width: 24rem;
+}
+
+.containerFluid h2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 12px;
+  width: 67px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.acordion {
+  width: 100%;
+  padding: 0 5px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
 }
 
 .acordion {
@@ -738,17 +836,54 @@ input[type="checkbox"] {
   padding: 0 5px;
   cursor: pointer;
   display: flex;
-  margin: 10px 0;
+  margin: 15px 0;
+}
+.panel p{
+  color: var(--OFF-GRAY, #979696);
 }
 
 .acordion .icon {
   margin: 0 10px 0 0;
   width: 30px;
   height: 30px;
-  background: url(img/faqsred.svg);
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px 7px #0A0A0A;
+  border-radius: 50%;
+  float: left;
+  transition: all 0.5s ease-in;
+
+}
+.acordion h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #f1f1f1;
+  font-family: Borna;
 }
 
-.right2 {}
+.active {
+  background-color: #101010;
+  color: #fff;
+}
+
+.active .icon {
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px -25px #F24200;
+    color: #fff;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid #101010;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}
+
 
 footer {
   background: var(--ALL-BLACK, #101010);
