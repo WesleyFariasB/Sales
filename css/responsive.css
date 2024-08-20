@@ -3,4 +3,27 @@
     .laranja .space .lupa{
         margin-top: -7rem;
       }
-}
+}   
+    section{
+      height: 60vh;
+    }
+    .center .mid{
+     margin-top: 10rem;
+    }
+    .center .slideshow{
+      margin-top: 10rem;
+    }
+    .slide-dots{
+      margin-top: -5rem;
+    }
+    .banner{
+      margin-top: 5rem;
+      gap: 10rem;
+    }
+    .complemento {
+      height: 40vh;
+    }
+
+    .complemento h2 {
+      margin-top: 4rem;
+    }
