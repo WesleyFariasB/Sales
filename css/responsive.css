@@ -31,7 +31,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 1.5rem;
+      gap: 136px;
     }
     .banner .banners {
       width: 300px;
@@ -43,9 +43,9 @@
     }
     .laranja .space .lupa {
       position: absolute;
-      width: 90%;
-      top: 8rem;
-      right: -1rem;
+      width: 35%;
+      top: 2.4rem;
+      right: 18rem;
     }
 }
 @media (max-width: 1600px){
@@ -68,18 +68,50 @@
     width: 600px;
     height: 460px;
   }
+  .laranja .space .lupa {
+    position: absolute;
+    width: 35%;
+    top: 3.9rem;
+    right: 18rem;
+  }
+}
+@media (max-width: 1550px){
+  .laranja .space .lupa {
+    position: absolute;
+    width: 35%;
+    top: 5rem;
+    right: 18rem;
+  }
+}
+@media (max-width: 1500px){
+  .laranja .space .lupa {
+    top: 6rem;
+  }
+}
+@media (max-width: 1450px){
+  .laranja .space .lupa {
+    top: 7.2rem;
+  }
+}
+@media (max-width: 1400px){
+  .laranja .space .lupa {
+    top: 8.3rem;
+    right: 17rem;
+  }
 }
   @media (max-width: 1375px){
     section .container .mid h2 {
       margin-top: -6rem;
     }
     .accordion {
-      margin-top: 6rem;
       width: 420px;
   }
   .slideshow {
     position: relative;
-    margin-top: 11rem;
+    margin-top: 3rem;
+  }
+  .slide-dots{
+    margin-top: -8rem;
   }
   .laranja .space h1 {
     margin-top: 15rem;
@@ -88,14 +120,11 @@
   }   
   .laranja .space .s-right {
     position: relative;
-    margin-right: -5.5rem;
+    margin-right: 1rem;
     margin-top: 10rem;
 }
   .laranja .space .lupa {
-    position: absolute;
-    width: 70%;
-    top: 9.9rem;
-    right: 10rem;
+    display: none;
   }
   .future .container .grid .slideshow-container .slideshow{
     position: relative;
@@ -105,6 +134,9 @@
   .future .container .grid .slideshow-container .slideshow .slide img{
     width: 500px;
     height: 330px;
+  }
+  .banner{
+    gap: 4rem;
   }
   .teste {
     position: relative;
@@ -235,6 +267,9 @@
       right: -1rem;
       display: none;
     }
+    .banner{
+      gap: 6rem;
+    }
   }
   @media (max-width: 1260px){
     .container{
@@ -246,16 +281,14 @@
 
     .accordion {
       width: 280px;
-      margin-top: 2.5rem;
     }
     .accordion li {
       width: 360px;
-      margin: 0.1px;
     }
     section .slideshow-container .slideshow{
       position: relative;
       margin-left: 5rem;
-      margin-top: 8rem;
+      margin-top: 4rem;
     }
     section .slide img,
     .slide2 img {
@@ -263,7 +296,7 @@
       height: 400px;
     }
     .slide-dots{
-      margin-top: -15rem;
+      margin-top: -8rem;
     }
   }
   @media (max-width: 1155px){
@@ -276,6 +309,9 @@
     section .container .mid h2 {
       margin-top: -8rem;
     }
+    .banner{
+      gap: 5rem;
+    }
     .laranja .space .lupa{
       display: none;
     }
@@ -285,7 +321,7 @@
       align-items: center;
   }
     .laranja .space h1 {
-      margin-top: 5rem;
+      margin-top: 7rem;
       color: #fff;
       font-family: Inter;
       font-size: 32px;
@@ -362,6 +398,9 @@
       margin-right: -50px;
       margin-top: 5rem;
     }
+    .slide-dots{
+      margin-top: -10rem;
+    }
     .laranja .space .lupa{
       display: none;
     }
@@ -417,6 +456,36 @@
   .pai{
     display: none;
     }
+    .last{
+      display: flex;
+      flex-direction: column;
+    }
+    .opers{
+      height: 110vh;
+      margin-top: -12rem;
+    }
+    .faqs{
+      flex-direction: column;
+      margin-top: -8rem;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .acordion {
+      position: relative;
+      margin-top: 1rem;
+      margin-left: 0.1px;
+    }
+    .acordion li{
+      font-size: 12px;
+    }
+    .acordion li label{
+      font-size: 16px;
+    }
+    footer{
+      margin-top: -13rem;
+    }
   }
   @media (max-width: 1030px){
     .mid h2{
@@ -424,7 +493,7 @@
     }
     .accordion {
       width: 50px;
-      margin-top: 6rem;
+      margin-top: 0.5rem;
     }
     .accordion li {
       width: 360px;
@@ -432,12 +501,37 @@
     }
     section .slideshow-container .slideshow{
       margin-left: 1rem;
-      margin-top: 10rem;
+      margin-top: 1.5rem;
     }
     section .slide img,
     .slide2 img {
       width: 450px;
       height: 350px;
+    }
+  }
+  @media (max-width: 995px){
+    .banner{
+      gap: 2.3rem;
+    }
+  }
+  @media (max-width: 965px){
+    footer {
+      padding: 200px 0;
+    }
+    footer .main-area{
+      flex-direction: column;
+      align-items: center;
+    }
+    footer .main-area .left {
+      position: relative; 
+    }
+    footer .main-area .right{
+      flex-direction: column;
+      margin-right: 0px;
+      margin-top: -2rem;
+    }
+    footer .main-area .right .item-nav{
+      margin-top: 2rem;
     }
   }
   @media (max-width: 905px){
@@ -452,11 +546,13 @@
       width: 360px;
       margin: none;
     }
+    section{
+      height: 120vh;
+    }
     section .container .mid h2 {
       color: var(--IMPACT-ORANGE, #F24200);
       margin-left: 26px;
       margin-bottom: 25rem;
-      margin-top: -9.5rem;
       font-size: 32px;
     }
 
@@ -472,9 +568,30 @@
     }
     .slide-dots{
       position: absolute;
-      margin-top: -28rem;
+      margin-top: -38rem;
       margin-left: -14rem;
     }
+    .banner{
+      gap: 5rem;
+    }
+    .banner .banners {
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+  }
+    .complemento .banner p {
+      position: relative; 
+      margin-top: -7rem; 
+      margin-left: 5px; 
+      color: #FFF;
+      font-size: 16px;
+      
+  }
+    .complemento .banner h6 {
+      margin-top: 2rem;
+      margin-left: 5px; 
+      font-size: 8px;
+      }
   }
   @media (max-width: 860px){
     section .slideshow-container .slideshow{
@@ -489,9 +606,16 @@
     }
     .slide-dots{
       position: absolute;
-      margin-top: -28rem;
       margin-left: -14rem;
     }
+    .banner{
+      gap: 0.5rem;
+    }
+    .banner .banners {
+      width: 180px;
+      height: 180px;
+      flex-shrink: 0;
+  }
   }
   @media (max-width: 820px){
     section .slideshow-container .slideshow{
@@ -500,7 +624,17 @@
     .slide-dots{
       margin-left: -10rem;
     }
+    .complemento .banner p {
+      position: relative; 
+      margin-top: -9rem; 
+      margin-left: 1px; 
+      color: #FFF;
   }
+  .complemento .banner h6 {
+    margin-top: 2rem;
+    margin-left: 1px;
+  }
+}
   @media (max-width: 760px){
     section .slideshow-container .slideshow{
       margin-left: -44rem;
@@ -523,6 +657,11 @@
     section .slideshow-container .slideshow{
       margin-left: -37rem;
     }
+    .banner .banners {
+      width: 150px;
+      height: 150px;
+      flex-shrink: 0;
+  }
   }
   @media (max-width: 605px){
     section .slideshow-container .slideshow{
@@ -639,7 +778,7 @@
     }
     .complemento {
       width: 100%;
-      height: 100vh;
+      height: 80vh;
       background: var(--OFF-WHITE, #FFF);
       margin-top: 1rem;
     }
@@ -647,9 +786,16 @@
       margin-top: 5rem;
       font-size: 34px;
     }
+    .complemento .banner p{
+      margin-top: -6.5rem;
+      margin-left: 10px;
+    }
+    .complemento .banner h6{
+      margin-left: 10px;
+    }
     .banner{
       position: relative;
-      gap: 3rem;
+      gap: 2rem;
       display: flex;
       flex-direction: column;
     }
@@ -659,6 +805,8 @@
     .banner .banners{
       position: relative;
       max-width: 320px;
+      width: 200px;
+      height: 200px;
     }
     .laranja .space .lupa{
       display: none;
@@ -748,6 +896,7 @@
   }
   footer {
     padding: 200px 0;
+    margin-top: -3rem;
   }
   footer .main-area{
     flex-direction: column;
@@ -816,6 +965,9 @@
     position: absolute;
     margin-top: -38.5rem;
     margin-left: -1rem;
+  }
+  .complemento {
+    height: 90vh;
   }
   .complemento h2{
     margin-top: 5rem;

@@ -1,9 +1,3 @@
-@font-face{
-    font-family: Borna-regular;
-
-    src: url("Assets/borna-regular-webfont.ttf");
-}
-
 h1{
     color: #FFF;
     font-family: Borna;

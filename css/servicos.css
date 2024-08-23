@@ -3,16 +3,22 @@ header {
     height: 680px;
     flex-shrink: 0;
 }
+.logo{
+    margin-left: -1rem;
+}
 header .container .hero h2 {
     font-family: Borna;
+    margin-top: 1rem;
+    margin-left: 0.1px;
 }
 header .container .hero h4 {
-    margin-left: 26px;
+    margin-left: 0.1px;;
     margin-top: 1.5rem;
     font-family: Borna;
   }
   header .container div .btn3 {
     margin-top: 1.5rem;
+    margin-left: 0.1px;
   }
   header .vendas {
     margin-top: 1.5rem;
@@ -22,13 +28,14 @@ header .container .hero h4 {
   header .container .s-hero h6 {
     margin-right: 0rem;
     margin-top: 1.5rem;
-    margin-left: 26px;
+    margin-left: 0.1px;
     color: var(--OFF-GRAY, #979696);
   }
   .imgsolo{
-    width: 620px;
-    height: 420px;
-    margin-top: 5rem
+    width: 50%;
+    height: 20%;
+    margin-top: -68px;
+    margin-right: 5rem;
   }
   .mapear{
     background: var(--OFF-WHITE, #FFF);
@@ -36,7 +43,7 @@ header .container .hero h4 {
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin-top: 7rem;
+    margin-top: 10rem;
   }
   .mapear .colunm .btn3{
     margin-top: 2rem;
@@ -73,43 +80,25 @@ header .container .hero h4 {
     height: 500px;
     flex-shrink: 0;
   }
-  .segredos {
-    align-items: center;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin-top: 12rem;
-    margin-bottom: 12rem;
-  }
-.segredos h2{
-  color: var(--IMPACT-ORANGE, #F24200);
-  font-family: Borna;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.72px;
 
+.grid{
+  margin-top: 10rem;
 }
-.segredos h3{
-  color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.24px;
-  margin-top: 2.5rem;
-  opacity: 0.4;
+.slideshow-container{
+  width: 100%;
 }
-.segredos h6{
-  color: var(--OFF-GRAY, #979696);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 2.5rem;
+.slideshow {
+  position: relative;
+  margin-top: 5rem;
+}
+.slide img, .slide2 img {
+  width: 620px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.teste .slide-dots{
+  display: none;
 }
 .segredos .preto{
   color: var(--ALL-BLACK, #101010);
@@ -160,9 +149,50 @@ header .container .hero h4 {
 .black2{
   background: var(--ALL-BLACK, #101010);
   width: 100%;
-  height: 600px;
+  height: 100%;
   flex-shrink: 0;
-
+}
+.black2 .center{
+  display: flex;
+}
+.black2 .mid{
+  margin-top: 10rem;
+}
+.black2 .mid h2{
+  color: #F24200;
+  margin-bottom: 1rem;
+}
+.black2 .accordion li{
+  margin-left: -0.5rem;
+  margin-top: 10px;
+}
+.black2 .slideshow{
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+.black2 .slide img{
+  width: 75%;
+  height: 75%;
+  margin-left: 10rem;
+}
+.black2 .slide .img0{
+  margin-top: 4rem;
+}
+.black2 .slide .img2{
+  width: 60%;
+  height: 60%;
+}
+.black2 .slide .img3{
+  width: 50%;
+  height: 50%;
+}
+.black2 .container .center .mid .accordion li label:hover{
+  color: #F24200;
+}
+.slide-dots{
+  position: absolute;
+  margin-top: 1rem;
+  background-color: #101010;
 }
 .photo{
   align-items: center;

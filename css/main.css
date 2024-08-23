@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Borna';
+  src: url('../Assets/borna-regular-webfont.ttf') format('truetype');
+  font-weight: normal;  
+  font-style: normal;
+}
+
 .vid {
   display: block;
   width: 100%;
@@ -17,7 +24,7 @@
 .navbar a {
   display: inline-block;
   margin: 15px;
-  font-family: borna;
+  font-family: 'Borna';
 }
 .fath .container .navbar a:hover {
   color: #F24200;
@@ -53,7 +60,7 @@ header .container .navbar nav .btn {
   line-height: normal;
   letter-spacing: 0.7px;
   text-transform: uppercase;
-  font-family: Borna;
+  font-family: 'Borna';
 
 }
 
@@ -76,7 +83,7 @@ header .container .navbar nav .btn2 {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   margin-left: 26px;
-  font-family: Borna;
+  font-family: 'Borna';
   cursor: pointer;
 }
 
@@ -86,7 +93,7 @@ header .container .navbar nav a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Borna;
+  font-family: 'Borna';
 }
 
 header .container .navbar nav .help {
@@ -95,7 +102,7 @@ header .container .navbar nav .help {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Borna;
+  font-family: 'Borna';
   cursor: pointer;
 }
 
@@ -117,7 +124,7 @@ header .container div .btn3 {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   margin-left: 26px;
-  font-family: Borna;
+  font-family: 'Borna';
   cursor: pointer;
   margin-top: 5rem;
 
@@ -159,13 +166,13 @@ header .container .s-hero h6 {
 }
 
 section {
-  height: 100vh;
+  height: 85vh;
   background: var(--ALL-BLACK, #101010);
   width: 100%;
   margin-top: 20rem;
 }
 
-.center{
+section .center{
   margin-top: -5rem;
 }
 
@@ -208,7 +215,7 @@ section .container .center {
   justify-content: center;
   align-items: center;
   background-color: #101010;
-  margin-top: -12rem;
+  margin-top: -11rem;
   position: relative;
 }
 
@@ -280,7 +287,7 @@ section .container .center {
 .slide img,
 .slide2 img {
   width: 100%;
-  height: 460px;
+  height: 500px;
   object-fit: cover;
   object-position: center;
 }
@@ -292,7 +299,7 @@ section .container .center .slideshow-container {
 
 .slideshow {
   position: relative;
-  margin-top: 12.5rem;
+  margin-top: 4.5rem;
 }
 
 .prev,
@@ -331,7 +338,7 @@ section .container .center .slideshow-container {
 .complemento h2 {
   color: var(--OFF-GRAY, #979696);
   text-align: right;
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -386,7 +393,7 @@ section .container .center .slideshow-container {
   margin-top: -9rem;
   margin-left: 27px;
   color: var(--OFF-WHITE, #FFF);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -422,11 +429,10 @@ section .container .center .slideshow-container {
 
 .accordion {
   width: 620px;
-  margin-top: 5rem;
 }
 
 .accordion li {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-left: 1.2rem;
 }
 
@@ -482,7 +488,7 @@ input[type="checkbox"] {
 
 .solo {
   color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -496,7 +502,7 @@ input[type="checkbox"] {
   list-style: none;
   animation: moveSlideshow 15s linear infinite;
   white-space: nowrap;
-
+  gap: 4rem;
 }
 @keyframes moveSlideshow {
   100% { 
@@ -506,6 +512,7 @@ input[type="checkbox"] {
 .infinite li {
   display: flex;
   width: fit-content;
+  
 }
 
 .infinite img {
@@ -513,7 +520,6 @@ input[type="checkbox"] {
   height: 65px;
   flex-shrink: 0;
   margin: 1rem;
-
 }
 
 .infinite {
@@ -569,12 +575,12 @@ input[type="checkbox"] {
 .laranja .space .s-right {
   position: relative;
   margin-right: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .laranja .space h3 {
   color: var(--ALL-BLACK, #fff);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -595,10 +601,9 @@ input[type="checkbox"] {
 
 .laranja .space .lupa {
   position: absolute;
-  width: 1000px;
-  top: -0.5rem;
-  right: 18rem;
-
+  width: 34%;
+  right: 400px;
+  top: -32px;
 }
 
 .future {
@@ -753,7 +758,7 @@ input[type="checkbox"] {
   color: #000;
   margin-top: 7rem;
   color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -784,10 +789,10 @@ input[type="checkbox"] {
 .dual h2{
   color: #000;
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 15rem;
   margin-left: 5rem;
   color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -893,7 +898,7 @@ input[type="radio"]{
   padding: 3px 0 0 0;
   font-weight: normal;
   color: #f1f1f1;
-  font-family: Borna;
+  font-family: 'Borna';
 }
 
 .active {

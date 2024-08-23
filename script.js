@@ -2,6 +2,18 @@ const ACCORDION_ABOUT = 'accordion-about'
 const SLIDE_ABOUT = 'slide-about'
 const SLIDE_FEATURES = 'slide-features'
 
+let currentAboutSlideOrder = 0;
+
+setInterval(() => {
+  if(currentAboutSlideOrder === 4) {
+    currentAboutSlideOrder = 0;
+    change(currentAboutSlideOrder, 'slide-about','accordion-about')
+  } else {
+    change(currentAboutSlideOrder, 'slide-about','accordion-about')
+    currentAboutSlideOrder++;
+  }
+}, 5000)
+
 
 /**
  * Change the current slide

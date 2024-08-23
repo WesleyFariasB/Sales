@@ -1,26 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: Borna;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Borna;
+  -webkit-font-smoothing: antialiased;
 }
-@font-face {
-    font-family: 'Borna';
-    src: url(../assets/borna-regular-webfont.ttf);
-  }
 
 .container{
-    width: 80%;
-    max-width: 112rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  width: 80%;
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 html {
-    overflow-x: hidden;
-    font-size: borna-regular;
-  }
+  overflow-x: hidden;
+  font-size: borna-regular;
+}
   
