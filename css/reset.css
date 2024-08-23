@@ -7,6 +7,11 @@
     font-family: Borna;
     -webkit-font-smoothing: antialiased;
 }
+@font-face {
+    font-family: 'Borna';
+    src: url(../assets/borna-regular-webfont.ttf);
+  }
+
 .container{
     width: 80%;
     max-width: 112rem;
@@ -16,4 +21,6 @@
 
 html {
     overflow-x: hidden;
+    font-size: borna-regular;
   }
+  

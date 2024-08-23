@@ -1,0 +1,45 @@
+.btn2 {
+    background: var(--IMPACT-ORANGE, #F24200);
+    border: 1px solid var(--IMPACT-ORANGE, #F24200);
+    color: var(--OFF-WHITE, #FFF);
+    padding: 8px 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    font-family: Borna;
+    cursor: pointer;
+  }
+
+.btn {
+    border: 1px solid var(--IMPACT-ORANGE, #F24200);
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    font-family: Borna;
+}
+
+.btn3 {
+    background: var(--IMPACT-ORANGE, #F24200);
+    border: 1px solid var(--IMPACT-ORANGE, #F24200);
+    color: var(--OFF-WHITE, #FFF);
+    padding: 8px 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    font-family: Borna;
+    cursor: pointer;
+
+  }

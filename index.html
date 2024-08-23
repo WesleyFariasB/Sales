@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
@@ -18,17 +21,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/responsiveS.css" />
+    <link rel="stylesheet" href="css/responsiveP.css" />
     <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/variables.css" />
 </head>
 
 <body>
 
     <header>
         <div class="fath">
-            <video class="vid" src="img/Sales.mp4" autoplay muted loop></video>
+            <video class="vid" src="img/video-sales-1.mp4" autoplay muted loop></video>
             <div class="container">
                 <div class="navbar">
                     <div class="logo"><img src="img/header.svg"></div>
+                    <nav>
+                        <a href="index.html">INÍCIO</a>
+                        <a href="servicos.html">SERVIÇOS</a>
+                        <a href="planos.html">PLANOS</a>
+                    </nav>
+                    <nav>
+                        <a class="help"><img src="img/inter.svg" alt="">AJUDA</a>
+                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
+                        <input class="btn2" type="button" value="LOGIN" />
+                    </nav>
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="mobile-menu">
                     <nav>
                         <a href="index.html">INÍCIO</a>
                         <a href="servicos.html">SERVIÇOS</a>
@@ -36,10 +58,11 @@
                     </nav>
                     <nav>
                         <a class="help"><img src="img/inter.svg" alt="">AJUDA</a>
-                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
                         <input class="btn2" type="button" value="LOGIN" />
+                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
                     </nav>
                 </div>
+
                 <div class="s-hero">
                     <div class="hero">
                         <h2>Unificando Marketing e<br> Vendas com Inteligência<br> Artificial para Decisões<br>
@@ -58,42 +81,41 @@
 
     <section>
         <div class="container">
-            <div class="center">
+            <div data-aos="fade-up" data-aos-duration="2000" class="center">
                 <div class="mid">
                     <h2>Dores que atuamos</h2>
                     <ul class="accordion">
                         <li id="accordion-about" class="accordion-item accordion-about-item"
-                            onclick="change(0, 'accordion-about', 'slide-about')">
+                            onclick="change(0, 'slide-about', 'accordion-about')">
                             <input type="checkbox" name="accordion" checked>
-                            <label for="first">Unificação de dados</label>
-                            <div class="content">Com a SalesOpers, todas as suas fontes de dados de marketing e vendas
-                                são unificadas em uma plataforma única. Obtenha uma visão integrada e clara do seu
-                                negócio, facilitando a análise e a tomada de decisões estratégicas de maneira eficiente.
+                            <label for="first">Visão 360º da jornada do Lead</label>
+                            <div class="content">Obtenha uma visão completa e integrada de toda a jornada de marketing e vendas.
+                                 Desde o primeiro contato até o fechamento, mapeamos cada interação,
+                                 proporcionando insights profundos em todas as etapas do funil.
                             </div>
                         </li>
-                        <li onclick="change(1, 'accordion-about', 'slide-about')"
+                        <li onclick="change(1, 'slide-about', 'accordion-about')"
                             class="accordion-item accordion-about-item">
                             <input type="checkbox" name="accordion">
-                            <label for="second">Análise Avançada de KPIs</label>
-                            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-                                impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit
-                                velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
+                            <label for="second">Análise preditiva com IA</label>
+                            <div class="content">Utilize o poder da Inteligência Artificial para antecipar as necessidades dos seus clientes.
+                                 Nossa análise preditiva identifica padrões de comportamento e prevê ações futuras,
+                                 oferecendo recomendações personalizadas.</div>
                         </li>
-                        <li onclick="change(2, 'accordion-about', 'slide-about')"
+                        <li onclick="change(2, 'slide-about', 'accordion-about')"
                             class="accordion-item accordion-about-item">
                             <input type="checkbox" name="accordion">
-                            <label for="third">Previsão e Tendências</label>
-                            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-                                impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit
-                                velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
+                            <label for="third">Otimização em tempo real</label>
+                            <div class="content">Transforme dados em ações instantâneas. Ao agir com base em dados atualizados,
+                                 você maximiza o impacto de cada ponto de contato e melhora continuamente os resultados de vendas.</div>
                         </li>
-                        <li onclick="change(3, 'accordion-about', 'slide-about')"
+                        <li onclick="change(3, 'slide-about', 'accordion-about')"
                             class="accordion-item accordion-about-item">
                             <input type="checkbox" name="accordion">
-                            <label for="fourth">Relatórios Personalizados</label>
-                            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-                                impedit non! Est assumenda libero dolor cum distinctio quis asperiores reprehenderit
-                                velit perferendis maiores. Mollitia consectetur quidem debitis eaque. Eius, earum!</div>
+                            <label for="fourth">Verificação das sugestões</label>
+                            <div class="content">Acompanhamos a aplicação das sugestões e avaliamos seus impactos.
+                                 Isso garante que os ajustes realizados,
+                                 permitindo uma adaptação constante e refinamento das suas estratégias.</div>
                         </li>
                     </ul>
                 </div>
@@ -120,7 +142,7 @@
             
         </div>
     </section>
-    <div class="slide-dots">
+    <div data-aos="fade-up" data-aos-duration="1500" class="slide-dots">
         <a id="slide-about-dot" class="slide-dot slide-about-item-dot"
             onclick="change(0, 'slide-about','accordion-about')"></a>
         <a class="slide-dot slide-about-item-dot" onclick="change(1, 'slide-about','accordion-about')"></a>
@@ -130,22 +152,22 @@
     <div class="container">
         <div class="complemento">
             <h2>Sales Opers fazendo o trabalho por vocês!</h2>
-            <div class="banner">
-                <div>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="banner">
+                <div class="picture">
                     <img class="banners" src="img/banner1.svg" alt="">
                     <a><img src="img/Group 6304.svg" alt=""></a>
                     <p>CAC e Tendencias <br>em um Dast</p>
                     <h6>TREND HUNTER</h6>
                     <h6 class="line">GUIA</h6>
                 </div>
-                <div>
+                <div class="picture">
                     <img class="banners" src="img/banner2.svg" alt="">
                     <a><img src="img/Group 6303.svg" alt=""></a>
                     <p>LTV em<br>previsão</p>
                     <h6>ESTIMATIVA</h6>
                     <h6 class="line">RETORNO</h6>
                 </div>
-                <div>
+                <div class="picture">
                     <img class="banners" src="img/banner3.svg" alt="">
                     <a><img src="img/Group 6302.svg" alt=""></a>
                     <p>Possibilidades<br>de Churn</p>
@@ -220,6 +242,64 @@
             <li>
                 <img src="img/sebrae.svg" alt="" />
             </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
+            <li>
+                <img src="img/sebrae.svg" alt="" />
+            </li>
         </ul>
     </div>
     <div class="laranja">
@@ -236,14 +316,14 @@
                     <input class="btn3" type="button" value="TRIAL" /> <a class="vendas" href="#"><img class="chat"
                             src="img/chatblack.svg" alt="" href="#">Entre em contato</a>
                 </div>
-                <img class="lupa" src="img/sorriso.png" alt="">
+                <img data-aos="fade-up" data-aos-duration="800" class="lupa" src="img/sorriso.png">
             </div>
         </div>
     </div>
 
     <div class="future">
         <div class="container">
-            <div class="grid">
+            <div data-aos="fade-up" data-aos-duration="2000" class="grid">
                 <div class="slideshow-container">
                     <div class="slideshow">
                         <div class="slide slide-features-item" id="slide-features">
@@ -259,7 +339,7 @@
                         </div>
 
                         <div class="slide slide-features-item">
-                            <img src="img/op3.png" />
+                            <img src="img/op4.png" />
                         </div>
                     </div>
                 </div>
@@ -283,7 +363,7 @@
                 </div>
             </div>
             <div class="teste">
-                <div class="slide-dots">
+                <div data-aos="fade-up" data-aos-duration="2000" class="slide-dots">
                     <a id="slide-features-dot" class="slide-dot slide-features-item-dot"
                         onclick="change(0, 'slide-features')"></a>
                     <a class="slide-features-item-dot slide-dot" onclick="change(1, 'slide-features')"></a>
@@ -298,9 +378,7 @@
             <div class="dual">
                 <h2>Antecipe o futuro<br>com previsões e<br>tendências de<br>mercado</h2>
             </div>
-            <div>
-                <img src="img/imagem-banner.png" alt="">
-            </div>
+            <img src="img/imagem-banner.png" alt="">
         </div>
     </div>    
         <div class="opers">
@@ -311,70 +389,60 @@
                         <h2>DÚVIDAS<br>FREQUENTES</h2>
                         <input class="btn3" type="button" value="FALE COM UM ESPECIALISTA" />
                     </div>
-                    <div class="right2">
-                        <div class="container-fluid">
-                            <div class="acordion">
-                                <div class="icon"></div>
-                                <h5>Whats in lorem impum?</h5>
+                    <ul class="acordion">
+                        <li>
+                            <input type="radio" name ="acordion" id="one" checked>
+                            <label for="one">Como a análise preditiva da SalesOpers funciona?</label>
+                            <div class="contente">
+                                <p>A análise preditiva da SalesOpers utiliza algoritmos de Inteligência Artificial
+                                    para identificar padrões de comportamento ao longo da jornada de vendas. Com base nesses padrões,
+                                    prevemos as próximas ações dos clientes e fornecemos recomendações personalizadas para cada etapa do funil,
+                                    aumentando as chances de conversão.</p>
                             </div>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, At least one of them
-                                    remains
-                                    open. How do I turn off them all?open. How do I turn off them all?open. How do I turn off them all?open. How do I turn off them all?open. How do I turn off them all?open. How do I turn off them all?</p>
+                        </li>
+                        <li>
+                            <input type="radio" name ="acordion" id="two">
+                            <label for="two">Como a SalesOpers verifica os ajustes realizados?</label>
+                            <div class="contente">
+                                <p>Após fornecer sugestões baseadas em nossos insights, a SalesOpers acompanha a implementação dessas mudanças e analisa seus impactos.
+                                     Isso garante que as ações realizadas estão realmente melhorando os resultados e permite ajustes contínuos para maximizar o desempenho.</p>
                             </div>
-
-                            <div class="acordion">
-                                <div class="icon"></div>
-                                <h5>Whats in lorem impum?</h5>
+                        </li>
+                        <li>
+                            <input type="radio" name ="acordion" id="three">
+                            <label for="three">A SalesOpers é fácil de integrar com meu CRM atual?</label>
+                            <div class="contente">
+                                <p>Sim! A SalesOpers foi projetada para ser compatível com os principais CRMs do mercado.
+                                     Nossa equipe de suporte está disponível para ajudar na integração e garantir que você comece a obter valor da plataforma o mais rápido possível.</p>
                             </div>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, At least one of them
-                                    remains,open. How do I turn off them all?open. How do I turn off them all?
-                                    open. How do I turn off them all?
-                                    </p>
+                        </li>
+                        <li>
+                            <input type="radio" name ="acordion" id="four">
+                            <label for="four">A SalesOpers oferece suporte ao cliente?</label>
+                            <div class="contente">
+                                <p>Sim! Nosso time de suporte está disponível para ajudar você em todas as etapas, 
+                                    desde a configuração inicial até o uso contínuo da plataforma. Oferecemos suporte via chat, e-mail e telefone, 
+                                    garantindo que suas dúvidas sejam resolvidas rapidamente.</p>
                             </div>
-
-                            <div class="acordion">
-                                <div class="icon"></div>
-                                <h5>Whats in lorem impum?</h5>
+                        </li>
+                        <li>
+                            <input type="radio" name ="acordion" id="five">
+                            <label for="five">Como a SalesOpers ajuda a alinhar marketing e vendas para resultados mais eficazes?</label>
+                            <div class="contente">
+                                <p>A SalesOpers cria uma ponte entre os departamentos de marketing e vendas ao fornecer dados precisos sobre a jornada do lead. Com insights compartilhados,
+                                     ambas as equipes podem alinhar suas estratégias, focando nos leads mais promissores e
+                                     ajustando suas abordagens para maximizar os resultados. Esse alinhamento torna todo o processo de geração e conversão de leads mais coeso e eficiente.</p>
                             </div>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, At least one of them
-                                    remains
-                                    open. How do I turn off them all?</p>
+                        </li>
+                        <li>
+                            <input type="radio" name ="acordion" id="six">
+                            <label for="six">De que maneira a SalesOpers utiliza os dados para ajustar o ICP do cliente?</label>
+                            <div class="contente">
+                                <p>A SalesOpers analisa continuamente os dados dos leads que entram em contato com sua empresa e compara esses dados com os resultados de vendas. Ao identificar quais leads têm maior probabilidade de converter,
+                                     nossa plataforma ajusta automaticamente o ICP, ajudando a otimizar os esforços de marketing e vendas para atrair os clientes mais alinhados ao seu negócio.</p>
                             </div>
-
-                            <div class="acordion">
-                                <div class="icon"></div>
-                                <h5>Whats in lorem impum?</h5>
-                            </div>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, At least one of them
-                                    remains
-                                    open. How do I turn off them all?</p>
-                            </div>
-
-                            <div class="acordion">
-                                <div class="icon"></div>
-                                <h5>Whats in lorem impum?</h5>
-                            </div>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, At least one of them
-                                    remains
-                                    open. How do I turn off them all?</p>
-                            </div>
-
-                            <div class="acordion">
-                                <div class="icon"></div>
-                                <h5>Whats in lorem impum?</h5>
-                            </div>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, At least one of them
-                                    remains
-                                    open. How do I turn off them all?</p>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -444,6 +512,7 @@
         <script>
             AOS.init();
         </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="script.js"></script>
 </body>
 

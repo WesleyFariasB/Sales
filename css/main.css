@@ -1,7 +1,7 @@
 .vid {
   display: block;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   object-fit: cover;
   position: absolute;
   z-index: -1;
@@ -18,6 +18,20 @@
   display: inline-block;
   margin: 15px;
   font-family: borna;
+}
+.fath .container .navbar a:hover {
+  color: #F24200;
+}
+
+.fath .container .navbar .btn:hover {
+  background-color: #F24200;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+.mobile-menu{
+  display: none;
 }
 
 header .container .navbar .logo img {
@@ -90,22 +104,6 @@ header .container .navbar nav .help img {
   flex-shrink: 0;
 }
 
-.btn3 {
-
-  background: var(--IMPACT-ORANGE, #F24200);
-  border: 1px solid var(--IMPACT-ORANGE, #F24200);
-  color: var(--OFF-WHITE, #FFF);
-  padding: 8px 12px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  font-family: Borna;
-  cursor: pointer;
-  margin-top: 5rem;
-}
 
 header .container div .btn3 {
   background: var(--IMPACT-ORANGE, #F24200);
@@ -132,7 +130,7 @@ header .container div a {
 
 header .container .hero h2 {
   margin-left: 26px;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 header .container .hero a img {
@@ -157,14 +155,14 @@ header .container .s-hero {
 
 header .container .s-hero h6 {
   margin-right: 6rem;
-  margin-top: 17rem;
+  margin-top: 21.2rem;
 }
 
 section {
   height: 100vh;
   background: var(--ALL-BLACK, #101010);
   width: 100%;
-  margin-top: 14rem;
+  margin-top: 20rem;
 }
 
 .center{
@@ -174,10 +172,11 @@ section {
 section .container .mid h2 {
   color: var(--IMPACT-ORANGE, #F24200);
   margin-left: 26px;
+  margin-top: -5.5rem;
 }
 
 .container .mid {
-  margin-top: 8rem;
+  margin-top: 13.5rem;
 }
 
 
@@ -281,7 +280,7 @@ section .container .center {
 .slide img,
 .slide2 img {
   width: 100%;
-  height: 452px;
+  height: 460px;
   object-fit: cover;
   object-position: center;
 }
@@ -293,9 +292,7 @@ section .container .center .slideshow-container {
 
 .slideshow {
   position: relative;
-  width: 665px;
-  height: 450px;
-  margin-top: 11rem;
+  margin-top: 12.5rem;
 }
 
 .prev,
@@ -340,12 +337,12 @@ section .container .center .slideshow-container {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.72px;
-  margin-top: 12rem;
-  margin-bottom: 2rem;
+  margin-top: 18rem;
+  margin-bottom: 4rem;
 }
 
 .banner {
-
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -357,7 +354,26 @@ section .container .center .slideshow-container {
   height: 450px;
   flex-shrink: 0;
 }
+.picture{
+  cursor: pointer;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) ;
+}
+.picture:after{
+  content:"";
+  position:absolute;
+  opacity:0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
 
+.picture:hover{
+  transform:scale(1.10,1.10);
+}
+
+.picture:hover::after{
+  opacity:1;
+}
 .banner a {
   position: absolute;
   display: flex;
@@ -405,17 +421,13 @@ section .container .center .slideshow-container {
 }
 
 .accordion {
-  margin: 60px auto;
-  width: 600px;
+  width: 620px;
+  margin-top: 5rem;
 }
 
 .accordion li {
-  width: 100%;
-  margin: 20px;
-  padding: 4px;
-  border-radius: 8px;
-  background: var(--ALL-BLACK, #101010);
-
+  margin-top: 2rem;
+  margin-left: 1.2rem;
 }
 
 .accordion li label {
@@ -482,22 +494,26 @@ input[type="checkbox"] {
 .infinite ul {
   display: flex;
   list-style: none;
-  animation: 15s slide infinite linear;
+  animation: moveSlideshow 15s linear infinite;
   white-space: nowrap;
 
 }
-
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
 .infinite li {
   display: flex;
   width: fit-content;
-
 }
 
 .infinite img {
-  width: 132px;
-  height: 73px;
+  width: 125px;
+  height: 65px;
   flex-shrink: 0;
   margin: 1rem;
+
 }
 
 .infinite {
@@ -528,6 +544,7 @@ input[type="checkbox"] {
   background: var(--ALL-BLACK, #101010);
   margin-left: 0;
   cursor: pointer;
+  
 
 }
 
@@ -539,6 +556,7 @@ input[type="checkbox"] {
   line-height: normal;
   margin-left: 15px;
   cursor: pointer;
+ 
 }
 
 .laranja .space a img {
@@ -550,7 +568,7 @@ input[type="checkbox"] {
 
 .laranja .space .s-right {
   position: relative;
-  margin-right: 8rem;
+  margin-right: 1.5rem;
   margin-top: 5rem;
 }
 
@@ -577,9 +595,10 @@ input[type="checkbox"] {
 
 .laranja .space .lupa {
   position: absolute;
-  width: 100%;
+  width: 1000px;
   top: -0.5rem;
-  right: -1rem;
+  right: 18rem;
+
 }
 
 .future {
@@ -600,16 +619,18 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
 }
+.future .container .grid .slideshow-container .slideshow {
+  position: relative;
+  width: 780px;
+  height: 590px;
+  margin-top: 8rem;
+}
 
 .slides {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
 .slides img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -622,8 +643,6 @@ input[type="checkbox"] {
 .show {
   margin-left: 4rem;
   position: relative;
-  width: 550px;
-  height: 550px;
   margin-top: 5.6rem;
 
 }
@@ -685,17 +704,20 @@ input[type="checkbox"] {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 1rem;
   margin-left: 10rem;
+}
+.teste .vendas{
+  margin-top: -1.5rem;
 }
 .future .grid .teste .broken{
   display: flex;
 }
 .teste .slide-dots{
+  position: absolute;
   background-color: #FFF;
   margin-left: -4.5rem;
-  margin-top: -5rem;
-
+  margin-top: -11rem;
 }
 .teste .btn3{
   display: flex;
@@ -717,7 +739,6 @@ input[type="checkbox"] {
   letter-spacing: -0.24px;
 }
 .vendas{
-  position: absolute;
   margin-left: 5rem;
   bottom: 0.5rem;
 }
@@ -749,11 +770,16 @@ input[type="checkbox"] {
 .pai{
   display: flex;
   position: relative;
-  margin-top: 5rem;
+  margin-top: -5rem;
   justify-content: space-between;
+  width: 100%;
+  height: 550px;
+  flex-shrink: 0;
 }
 .pai img{
-  width: 100%;
+  position: absolute;
+  margin-top: 1.8rem;
+  margin-left: 25rem;
 }
 .dual h2{
   color: #000;
@@ -781,7 +807,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 14rem;
 }
 .faqs{
   margin-top: -3rem;
@@ -794,50 +820,58 @@ input[type="checkbox"] {
 .faqs .btn3 {
   margin-top: 3rem;
 }
-.right2{
-  margin-top: -4rem;
-  margin-left: 20rem;
-}
-
-.containerFluid {
-  width: 40%;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.containerFluid h2 {
+.opers .container .last .acordion label:hover {
   color: #F24200;
+}
+.acordion{
   position: relative;
-  width: 24rem;
+  margin-top: -5rem;
+  margin-left: 10rem;
 }
-
-.containerFluid h2::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  right: 12px;
-  width: 67px;
-  height: 2px;
-  background-color: #ffffff;
-}
-
-.acordion {
+.acordion li{
+  list-style: none;
   width: 100%;
-  padding: 0 5px;
-  cursor: pointer;
-  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  background: #101010;
+}
+.acordion li label{
   display: flex;
-  margin: 10px 0;
   align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--OFF-WHITE, #FFF);
+
+}
+.acordion li label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+input[type="radio"]{
+  display: none;
+}
+.acordion .contente{
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.acordion input[type="radio"]:checked + label + .contente{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.acordion input[type="radio"]:checked + label::before{
+  content: '-';
 }
 
-.acordion {
-  width: 100%;
-  padding: 0 5px;
-  cursor: pointer;
-  display: flex;
-  margin: 15px 0;
-}
 .panel p{
   color: var(--OFF-GRAY, #979696);
 }
@@ -887,19 +921,18 @@ input[type="checkbox"] {
 
 footer {
   background: var(--ALL-BLACK, #101010);
-  ;
 }
 
 footer {
-  padding: 48px 0;
+  padding: 100px 0;
 }
 
 footer .main-area {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-bottom: 66px;
-  margin-bottom: 24px;
+  border-top: solid 1px #979696;
+  padding: 4rem 0px
 }
 
 footer .main-area .left {
