@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Borna';
+  src: url('../Assets/borna-regular-webfont.ttf') format('truetype');
+  font-weight: normal;  
+  font-style: normal;
+}
+
 .vid {
   display: block;
   width: 100%;
@@ -17,7 +24,7 @@
 .navbar a {
   display: inline-block;
   margin: 15px;
-  font-family: borna;
+  font-family: 'Borna';
 }
 .fath .container .navbar a:hover {
   color: #F24200;
@@ -53,7 +60,7 @@ header .container .navbar nav .btn {
   line-height: normal;
   letter-spacing: 0.7px;
   text-transform: uppercase;
-  font-family: Borna;
+  font-family: 'Borna';
 
 }
 
@@ -76,7 +83,7 @@ header .container .navbar nav .btn2 {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   margin-left: 26px;
-  font-family: Borna;
+  font-family: 'Borna';
   cursor: pointer;
 }
 
@@ -86,7 +93,7 @@ header .container .navbar nav a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Borna;
+  font-family: 'Borna';
 }
 
 header .container .navbar nav .help {
@@ -95,7 +102,7 @@ header .container .navbar nav .help {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Borna;
+  font-family: 'Borna';
   cursor: pointer;
 }
 
@@ -117,7 +124,7 @@ header .container div .btn3 {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   margin-left: 26px;
-  font-family: Borna;
+  font-family: 'Borna';
   cursor: pointer;
   margin-top: 5rem;
 
@@ -331,7 +338,7 @@ section .container .center .slideshow-container {
 .complemento h2 {
   color: var(--OFF-GRAY, #979696);
   text-align: right;
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -386,7 +393,7 @@ section .container .center .slideshow-container {
   margin-top: -9rem;
   margin-left: 27px;
   color: var(--OFF-WHITE, #FFF);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -482,7 +489,7 @@ input[type="checkbox"] {
 
 .solo {
   color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -574,7 +581,7 @@ input[type="checkbox"] {
 
 .laranja .space h3 {
   color: var(--ALL-BLACK, #fff);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -753,7 +760,7 @@ input[type="checkbox"] {
   color: #000;
   margin-top: 7rem;
   color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -787,7 +794,7 @@ input[type="checkbox"] {
   margin-top: 10rem;
   margin-left: 5rem;
   color: var(--OFF-GRAY, #979696);
-  font-family: Borna;
+  font-family: 'Borna';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -893,7 +900,7 @@ input[type="radio"]{
   padding: 3px 0 0 0;
   font-weight: normal;
   color: #f1f1f1;
-  font-family: Borna;
+  font-family: 'Borna';
 }
 
 .active {

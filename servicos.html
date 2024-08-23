@@ -14,7 +14,6 @@
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Produtos</title>
-        <link rel="stylesheet" href="Assets/borna-regular-webfont.ttf">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/responsive.css" />
@@ -158,7 +157,75 @@
 
     <div class="black2">
         <div class="container">
-            
+            <section>
+                <div class="container">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="center">
+                        <div class="mid">
+                            <h2>Dores que atuamos</h2>
+                            <ul class="accordion">
+                                <li id="accordion-about" class="accordion-item accordion-about-item"
+                                    onclick="change(0, 'slide-about', 'accordion-about')">
+                                    <input type="checkbox" name="accordion" checked>
+                                    <label for="first">Visão 360º da jornada do Lead</label>
+                                    <div class="content">Obtenha uma visão completa e integrada de toda a jornada de marketing e vendas.
+                                         Desde o primeiro contato até o fechamento, mapeamos cada interação,
+                                         proporcionando insights profundos em todas as etapas do funil.
+                                    </div>
+                                </li>
+                                <li onclick="change(1, 'slide-about', 'accordion-about')"
+                                    class="accordion-item accordion-about-item">
+                                    <input type="checkbox" name="accordion">
+                                    <label for="second">Análise preditiva com IA</label>
+                                    <div class="content">Utilize o poder da Inteligência Artificial para antecipar as necessidades dos seus clientes.
+                                         Nossa análise preditiva identifica padrões de comportamento e prevê ações futuras,
+                                         oferecendo recomendações personalizadas.</div>
+                                </li>
+                                <li onclick="change(2, 'slide-about', 'accordion-about')"
+                                    class="accordion-item accordion-about-item">
+                                    <input type="checkbox" name="accordion">
+                                    <label for="third">Otimização em tempo real</label>
+                                    <div class="content">Transforme dados em ações instantâneas. Ao agir com base em dados atualizados,
+                                         você maximiza o impacto de cada ponto de contato e melhora continuamente os resultados de vendas.</div>
+                                </li>
+                                <li onclick="change(3, 'slide-about', 'accordion-about')"
+                                    class="accordion-item accordion-about-item">
+                                    <input type="checkbox" name="accordion">
+                                    <label for="fourth">Verificação das sugestões</label>
+                                    <div class="content">Acompanhamos a aplicação das sugestões e avaliamos seus impactos.
+                                         Isso garante que os ajustes realizados,
+                                         permitindo uma adaptação constante e refinamento das suas estratégias.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slideshow-container">
+                            <div class="slideshow">
+                                <div class="slide slide-about-item" id="slide-about">
+                                    <img src="img/p11.png" />
+                                </div>
+        
+                                <div class="slide slide-about-item">
+                                    <img src="img/p22.png" />
+                                </div>
+        
+                                <div class="slide slide-about-item">
+                                    <img src="img/p33.png" />
+                                </div>
+        
+                                <div class="slide slide-about-item">
+                                    <img src="img/p44.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div data-aos="fade-up" data-aos-duration="1500" class="slide-dots">
+                <a id="slide-about-dot" class="slide-dot slide-about-item-dot"
+                    onclick="change(0, 'slide-about','accordion-about')"></a>
+                <a class="slide-dot slide-about-item-dot" onclick="change(1, 'slide-about','accordion-about')"></a>
+                <a class="slide-dot slide-about-item-dot" onclick="change(2, 'slide-about','accordion-about')"></a>
+                <a class="slide-dot slide-about-item-dot" onclick="change(3, 'slide-about','accordion-about')"></a>
+            </div>
         </div>
     </div>
 
