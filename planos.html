@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/responsiveP.css" />
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/planos.css">
+    
+</head>   
+
+<body>
+  
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="navbar">
+                    <li class="logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+
+                        <li class=""><a href="index.html">INÍCIO</a></li>
+                        <li class=""><a href="produtos.html">PRODUTOS</a></li>
+                        <li class="left"><a href="planos.html">PLANOS</a></li>
+                        <li><a href="#" class="help"><img src="img/inter.svg" alt="">AJUDA</a></li>
+                        <li><input class="btn" type="button" value="FALE CONOSCO" /></li>
+                        <li><input class="btn2" type="button" value="LOGIN" /></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+    
+        <div class="start">
+            <div class="container">
+                <div class="watch">
+                    <h2>Conheça nossos planos</h2>
+                    <h6>Adquira um de nossos planos e comece o teste grátis agora mesmo</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="planos">
+            <div class="container">
+                <div class="valores">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="comunication">
+            <div class="container">
+                <div class="phone">
+                    <div>
+                        <h2>Entre em contato com<br>a gente e escolha o<br>melhor pacote!</h2>
+                        <li><input class="btn2" type="button" value="ENTRE EM CONTATO" /></li>
+                    </div>
+               
+                        <img class="young" src="img/Young.png" alt="">
+                   
+                    <div>
+                        <h3>Nossa equipe de<br>especialista estão<br>prontos para mostrar a<br>melhor forma de você<br>garantir sucesso na sua<br>jornada de venda!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="black2">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="2000" class="center">
+                    <div class="mid">
+                        <ul class="accordion">
+                            <li id="accordion-about" class="accordion-item accordion-about-item"
+                                onclick="change(0, 'slide-about', 'accordion-about')">
+                                <input type="checkbox" name="accordion" checked>
+                                <label for="first">Resultado é uma consequência</label>
+                                <div class="content">Aproveite dados concretos para obter resultados garantidos com a Sales Opers.
+                                     Com as informações fornecidas, você será guiado pelo caminho certo.
+                            </div>
+                            </li>
+                            <li onclick="change(1, 'slide-about', 'accordion-about')"
+                                class="accordion-item accordion-about-item">
+                                <input type="checkbox" name="accordion">
+                                <label for="second">Características dos leads</label>
+                                <div class="content">Entenda as características dos seus leads para tomar decisões precisas em suas campanhas,
+                                     facilitando a obtenção de resultados.</div>
+                            </li>
+                            <li onclick="change(2, 'slide-about', 'accordion-about')"
+                                class="accordion-item accordion-about-item">
+                                <input type="checkbox" name="accordion">
+                                <label for="third">Impulsione sua empresa</label>
+                                <div class="content">Use a SalesOpers para impulsionar suas estatísticas, trabalhando com dados reais e alcançando resultados positivos.</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="slideshow">
+                            <div class="slide slide-about-item" id="slide-about">
+                                <img class="img0" src="img/Frame.png" />
+                            </div>
+    
+                            <div class="slide slide-about-item">
+                                <img class="img2" src="img/Frame2.png" />
+                            </div>
+    
+                            <div class="slide slide-about-item">
+                                <img class="img3" src="img/frame3.png" />
+                            </div>
+    
+
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+        </div>
+
+    <div data-aos="fade-up" data-aos-duration="1500" class="slide-dots">
+        <a id="slide-about-dot" class="slide-dot slide-about-item-dot"
+        onclick="change(0, 'slide-about','accordion-about')"></a>
+        <a class="slide-dot slide-about-item-dot" onclick="change(1, 'slide-about','accordion-about')"></a>
+        <a class="slide-dot slide-about-item-dot" onclick="change(2, 'slide-about','accordion-about')"></a>
+    </div>
+
+
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="scripte.js"></script>
+</body>
+</html>

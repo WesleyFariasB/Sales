@@ -12,7 +12,7 @@ setInterval(() => {
     change(currentAboutSlideOrder, 'slide-about','accordion-about')
     currentAboutSlideOrder++;
   }
-}, 5000)
+}, 10000)
 
 
 /**
@@ -127,11 +127,11 @@ function changeText() {
   const currentSubText = document.getElementById('subtext')
   const texts = [
     {
-      text: " Rastreie a origem exata do seu Lead",
+      text: " Rastreie a origem exata do seu lead e entenda o que fazer para atingí-lo",
       subText: `Com o SalesOpers, você captura e rastreia com precisão a origem de cada lead, permitindo entender exatamente de onde vêm os seus melhores clientes (ICP). Isso ajuda a otimizar o uso do seu orçamento de marketing, reduzir o CAC e maximizar as vendas. Potencialize seus esforços e obtenha os melhores resultados.`
     },
     {
-      text: " Análise completa da jornada de vendas",
+      text: " Tenha uma análise completa da jornada de vendas em sua mão",
       subText: `Entenda como seus leads evoluem, quais interações são mais eficazes e quais ações aceleram o ciclo de vendas. Assim, você pode otimizar o desempenho da sua equipe, aumentar as taxas de conversão e garantir que nenhuma oportunidade seja perdida. Torne seu processo de vendas mais eficiente e previsível.`
     },
     {
@@ -181,3 +181,12 @@ function menuShow() {
       document.querySelector('.icon').scr = "img/close_white_36dp.svg"
     }
 }
+
+const menu = document.querySelector('nav');
+
+function activeScroll(){
+  menu.classList.toggle('ativo', scrollY > 0);
+
+}
+
+window.addEventListener('scroll', activeScroll);

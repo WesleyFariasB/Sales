@@ -17,45 +17,37 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/responsive.css" />
-        <link rel="stylesheet" href="css/responsiveS.css" />
         <link rel="stylesheet" href="css/responsiveP.css" />
         <link rel="stylesheet" href="css/typography.css" />
         <link rel="stylesheet" href="css/servicos.css">
         <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/responsiveS.css" />
 </head>    
 <body>
     <header>
+        
         <div class="fath">
             <div class="container">
-                <div class="navbar">
-                    <div class="logo"><img src="img/header.svg"></div>
-                    <nav>
-                        <a href="index.html">INÍCIO</a>
-                        <a href="produtos.html">PRODUTOS</a>
-                        <a href="planos.html">PLANOS</a>
-                    </nav>
-                    <nav>
-                        <a class="help"><img src="img/inter.svg" alt="">AJUDA</a>
-                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
-                        <input class="btn2" type="button" value="LOGIN" />
-                    </nav>
-                    <div class="mobile-menu-icon">
-                        <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
-                    </div>
-                </div>
+                
+                <nav>
+                    <ul class="navbar">
+                        <li class="logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+                        <input type="checkbox" id="check">
+                        <span class="menu">
 
-                <div class="mobile-menu">
-                    <nav>
-                        <a href="index.html">INÍCIO</a>
-                        <a href="servicos.html">SERVIÇOS</a>
-                        <a href="#">PLANOS</a>
-                    </nav>
-                    <nav>
-                        <a class="help"><img src="img/inter.svg" alt="">AJUDA</a>
-                        <input class="btn2" type="button" value="LOGIN" />
-                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
-                    </nav>
-                </div>
+                            <li class=""><a href="index.html">INÍCIO</a></li>
+                            <li class=""><a href="produtos.html">PRODUTOS</a></li>
+                            <li class="left"><a href="planos.html">PLANOS</a></li>
+                            <li><a href="#" class="help"><img src="img/inter.svg" alt="">AJUDA</a></li>
+                            <li><input class="btn" type="button" value="FALE CONOSCO" /></li>
+                            <li><input class="btn2" type="button" value="LOGIN" /></li>
+                            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                        </span>
+                        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    </ul>
+                </nav>
+
                 <div class="s-hero">
                     <div class="hero">
                         <h2>Desvende a jornada<br>completa do seu LEAD: </h2>
@@ -64,15 +56,15 @@
                                 src="img/chat.svg" alt="">Fale com a equipe de vendas</a>
                                 <h6>Descubra como seus leads se transformam em clientes!<br>Com a SalesOpers, você mapeia cada interação,
                                     do<br>primeiro clique à compra, revelando o caminho exato que<br>eles percorrem. Identifique gargalos,
-                                    personalize a<br>comunicação e otimize cada etapa da jornada para<br>aumentar suas taxas de conversão.
-                                    Aumente suas<br>vendas com inteligência e precisão.</h6>
+                                    personalize a<br>comunicação e otimize cada etapa da jornada para aumentar suas<br>taxas de conversão.
+                                    Aumente suas vendas com inteligência e precisão.</h6>
                     </div>
-
                     <img class="imgsolo" src="img/homem-recortado2.png" alt="">
-
                 </div>
             </div>
+            
         </div>
+        
     </header>
     <div class="container">
         <div class="mapear">
@@ -81,6 +73,9 @@
                 <input class="btn3" type="button" value="LEIA MAIS" /> <a class="vendas" href="#"><img
                     src="img/chat.svg" alt="">Entre em contato</a>
             </div>
+            
+            <img class="setalaranja" src="img/flecha.png" alt="">
+
             <div class="colunm2">
                 <h3>Com a SalesOpers, você<br>acompanha cada interação do<br>seu lead, desde o primeiro<br>clique até a decisão de compra.</h3>
 
@@ -88,60 +83,63 @@
                      fornecendo insights<br>valiosos para personalizar a comunicação e otimizar cada<br>etapa da jornada. 
                      Aumente suas taxas de conversão e<br>acelere suas vendas com inteligência e precisão.</h6>
             </div>
-            <img class="setalaranja" src="img/setalaranja3.png" alt="">
-        </div>
-        
-        <div data-aos="fade-up" data-aos-duration="2000" class="grid">
-            <div class="slideshow-container">
-                <div class="slideshow">
-                    <div class="slide slide-features-item" id="slide-features">
-                        <img src="img/op1.png" />
-                    </div>
-
-                    <div class="slide slide-features-item">
-                        <img src="img/op2.png" />
-                    </div>
-
-                    <div class="slide slide-features-item">
-                        <img src="img/op3.png" />
-                    </div>
-
-                    <div class="slide slide-features-item">
-                        <img src="img/op4.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="teste">
-                <h3 id="text">Rastreie a origem exata do seu Lead</h3>
-                <h5 id="subtext">Com o SalesOpers, você captura e rastreia com precisão a origem de cada lead, permitindo entender exatamente de onde vêm os seus melhores clientes (ICP). Isso ajuda a otimizar o uso do seu orçamento de marketing, reduzir o CAC e maximizar as vendas. Potencialize seus esforços e obtenha os melhores resultados.</h5>
-
-                <div class="arrows">
-                    <div class="arrow-right" onclick="prevSlide('slide-features')">
-                        <svg width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M10 6l-1.41 1.41L13.17 12l-4.58 4.59L10 18l6-6z" fill="#FFFFFF"/>
-                        </svg>
-                    </div>
-                    <div class="arrow-left" onclick="nextSlide('slide-features')">
-                        <svg width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M10 6l-1.41 1.41L13.17 12l-4.58 4.59L10 18l6-6z" fill="#FFFFFF"/>
-                        </svg>
-                    </div>
-                    </div class="broken">
-                        <input class="btn3" type="button" value="TRIAL"/><a class="vendas" href="#"><img src="img/chat.svg" alt="">Fale com a equipe de vendas</a>          
-            </div>
             
         </div>
-        <div class="teste">
-            <div data-aos="fade-up" data-aos-duration="2000" class="slide-dots">
-                <a id="slide-features-dot" class="slide-dot slide-features-item-dot"
-                    onclick="change(0, 'slide-features')"></a>
-                <a class="slide-features-item-dot slide-dot" onclick="change(1, 'slide-features')"></a>
-                <a class="slide-features-item-dot slide-dot" onclick="change(2, 'slide-features')"></a>
-                <a class="slide-features-item-dot slide-dot" onclick="change(3, 'slide-features')"></a>
+    </div>
+
+    <div class="future">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="2000" class="grid">
+                <div class="slideshow-container">
+                    <div class="slideshow">
+                        <div class="slide slide-features-item" id="slide-features">
+                            <img src="img/op1.png" />
+                        </div>
+
+                        <div class="slide slide-features-item">
+                            <img src="img/op2.png" />
+                        </div>
+
+                        <div class="slide slide-features-item">
+                            <img src="img/op3.png" />
+                        </div>
+
+                        <div class="slide slide-features-item">
+                            <img src="img/op4.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="teste">
+                    <h3 id="text">Rastreie a origem exata do seu Lead</h3>
+                    <h5 id="subtext">Com o SalesOpers, você captura e rastreia com precisão a origem de cada lead, permitindo entender exatamente de onde vêm os seus melhores clientes (ICP). Isso ajuda a otimizar o uso do seu orçamento de marketing, reduzir o CAC e maximizar as vendas. Potencialize seus esforços e obtenha os melhores resultados.</h5>
+
+                    <div class="arrows">
+                        <div class="arrow-right" onclick="prevSlide('slide-features')">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M10 6l-1.41 1.41L13.17 12l-4.58 4.59L10 18l6-6z" fill="#FFFFFF"/>
+                            </svg>
+                        </div>
+                        <div class="arrow-left" onclick="nextSlide('slide-features')">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M10 6l-1.41 1.41L13.17 12l-4.58 4.59L10 18l6-6z" fill="#FFFFFF"/>
+                            </svg>
+                        </div>
+                        </div class="broken">
+                            <input class="btn3" type="button" value="TRIAL"/><a class="vendas" href="#"><img src="img/chat.svg" alt="">Fale com a equipe de vendas</a>          
+                </div>
+            </div>
+            <div class="botao">
+                <div data-aos="fade-up" data-aos-duration="2000" class="slide-dots">
+                    <a id="slide-features-dot" class="slide-dot slide-features-item-dot"
+                        onclick="change(0, 'slide-features')"></a>
+                    <a class="slide-features-item-dot slide-dot" onclick="change(1, 'slide-features')"></a>
+                    <a class="slide-features-item-dot slide-dot" onclick="change(2, 'slide-features')"></a>
+                    <a class="slide-features-item-dot slide-dot" onclick="change(3, 'slide-features')"></a>
+                </div>
             </div>
         </div>
-
     </div>
+
     <div class="orangeplus">
         <div class="container">
             <div class="cacheado">
@@ -228,55 +226,59 @@
                         <input type="radio" name ="acordion" id="one" checked>
                         <label for="one">Como a SalesOpers rastreia a origem dos leads?</label>
                         <div class="contente">
-                            <p>Nossa plataforma captura e rastreia a origem de cada lead com precisão, desde o momento em que eles
-                                 interagem pela primeira vez com sua empresa. Isso permite que você entenda quais canais e
-                                 campanhas estão gerando os melhores resultados, ajudando a otimizar o seu orçamento de marketing.</p>
+                            <p>Nossa plataforma captura e rastreia a origem de cada lead com precisão,
+                                 desde o momento em que eles interagem pela primeira vez com sua empresa, monitoramos os Leads desde a
+                                  origem em mídias pagas ou orgânicas até o ganho dentro do CRM. Isso permite que você entenda quais canais e
+                                   campanhas estão gerando os melhores resultados, ajudando a otimizar o seu orçamento de marketing.</p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name ="acordion" id="two">
-                        <label for="two">A SalesOpers pode otimizar campanhas de marketing em tempo real?</label>
+                        <label for="two">Como a SalesOpers consegue entender e melhorar o ICP (Ideal Customer Profile) do meu negócio?</label>
                         <div class="contente">
-                            <p>Sim! Nossa plataforma monitora constantemente os dados da jornada de vendas e fornece insights em tempo real.
-                                 Com essas informações, sua equipe pode ajustar as campanhas imediatamente,
-                                 garantindo que os recursos sejam alocados de forma eficiente e que cada interação com o cliente seja otimizada.</p>
+                            <p>A SalesOpers rastreia e analisa a origem e o comportamento de cada lead, ajudando a identificar quais características e
+                                 comportamentos são comuns entre os leads que mais convertem. Com esses dados,
+                                 você pode refinar seu ICP, garantindo que suas campanhas de marketing e
+                                  vendas estejam focadas nos perfis de clientes que trazem o maior valor para o seu negócio.</p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name ="acordion" id="three">
-                        <label for="three">Como a SalesOpers verifica os ajustes realizados?</label>
+                        <label for="three">A SalesOpers pode otimizar campanhas de marketing em tempo real?</label>
                         <div class="contente">
-                            <p>Após fornecer sugestões baseadas em nossos insights, a SalesOpers acompanha a implementação dessas mudanças e
-                                 analisa seus impactos. Isso garante que as ações
-                                 realizadas estão realmente melhorando os resultados e permite ajustes contínuos para maximizar o desempenho.</p>
+                            <p> Sim! Nossa plataforma monitora constantemente os dados da jornada de vendas e fornece insights em tempo real.
+                                 Com essas informações,
+                                 sua equipe pode ajustar as campanhas imediatamente,
+                                  garantindo que os recursos sejam alocados de forma eficiente e que cada interação com o cliente seja otimizada.</p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name ="acordion" id="four">
-                        <label for="four">Qual o diferencial da SalesOpers em relação a outras plataformas de inteligência de vendas?</label>
+                        <label for="four">Como a SalesOpers consegue entender e melhorar o ICP (Ideal Customer Profile) do meu negócio?</label>
                         <div class="contente">
-                            <p>A SalesOpers se destaca pela combinação de rastreamento preciso da origem dos leads, análise preditiva avançada,
-                                 otimização em tempo real e verificação constante dos ajustes realizados. Isso permite uma abordagem
-                                 holística e orientada a resultados, que maximiza a eficiência das suas campanhas de marketing e vendas.</p>
+                            <p>A SalesOpers rastreia e analisa a origem e o comportamento de cada lead,
+                                 ajudando a identificar quais características e comportamentos são comuns entre os leads que mais convertem. Com esses dados,
+                                 você pode refinar seu ICP, garantindo que suas campanhas de marketing e
+                                  vendas estejam focadas nos perfis de clientes que trazem o maior valor para o seu negócio.</p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name ="acordion" id="five">
-                        <label for="five">A SalesOpers oferece suporte ao cliente?</label>
+                        <label for="five">Como a SalesOpers gera insights poderosos para o meu negócio?</label>
                         <div class="contente">
-                            <p>Sim! Nosso time de suporte está disponível para ajudar você em todas as etapas, desde a configuração inicial
-                                 até o uso contínuo da plataforma.
-                                 Oferecemos suporte via chat, e-mail e telefone, garantindo que suas dúvidas sejam resolvidas rapidamente.</p>
+                            <p>A SalesOpers coleta e analisa dados detalhados de cada interação ao longo da jornada de vendas. Utilizando algoritmos avançados de IA,
+                                 identificamos padrões e tendências que fornecem insights profundos sobre o comportamento dos leads.
+                                 Esses insights ajudam você a tomar decisões mais informadas,
+                                  ajustar suas estratégias em tempo real e focar nos esforços que geram os melhores resultados.</p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name ="acordion" id="six">
-                        <label for="six">Como a SalesOpers ajuda a criar previsibilidade de vendas?</label>
+                        <label for="six">Como a análise preditiva da SalesOpers funciona?</label>
                         <div class="contente">
-                            <p>A SalesOpers utiliza análise preditiva para mapear o comportamento dos leads e prever suas ações futuras.
-                                 Com base nesses dados, você pode antecipar resultados e ajustar suas estratégias para maximizar as chances de conversão.
-                                  Isso cria uma previsibilidade maior
-                                 no seu pipeline de vendas, permitindo que você planeje com mais precisão e otimize o desempenho da sua equipe.</p>
+                            <p>A análise preditiva da SalesOpers utiliza algoritmos de Inteligência Artificial para identificar padrões de 
+                                comportamento ao longo da jornada de vendas. Com base nesses padrões, prevemos as próximas ações dos clientes e fornecemos recomendações personalizadas para cada etapa do funil,
+                                 aumentando as chances de conversão, diminuindo o CAC (Custo de Aquisição) e aumentando a possibilidade de um longo LTV.</p>
                         </div>
                     </li>
                 </ul>

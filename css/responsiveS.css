@@ -1,0 +1,214 @@
+@media (min-width: 2300px){
+   
+}
+@media (max-width: 1600px){
+    .setalaranja{
+        width: 400px;
+        height: 400px;
+        margin-top: -6.5rem;
+      }
+      .mapear .colunm h2{
+        font-size: 32px;
+      }
+}
+
+    
+
+@media (max-width: 1550px){
+    .mapear .colunm h2{
+      font-size: 28px;
+    }
+    .mapear .colunm2 h3{
+        font-size: 27px;
+    }
+    .mapear .colunm2 h6{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1420px){
+    .setalaranja{
+        width: 350px;
+        height: 350px;
+        margin-top: -5rem;
+      }
+      .mapear .colunm2 h3{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1350px){
+    .mapear .colunm2 h6{
+        font-size: 13px;
+    }
+    .mapear .colunm2 h3{
+        font-size: 22px;
+    }
+  
+}
+@media (max-width: 1315px){
+    .setalaranja{
+        display: none;
+    }
+}
+
+  @media (max-width: 1050px){
+    header{
+        height: 100%;
+    }
+    .imgsolo{
+        width: 400px;
+        height: 300px;
+      }
+    header .container .hero{
+        margin-top:-8rem ;
+      }
+    header .container .hero h2{
+        margin-bottom: 1rem;
+    }
+    header .container .hero h4{
+        margin-top: 1rem;
+    }
+    header .container .hero h6{
+        color: var(--OFF-WHITE, #FFF);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;    
+        width: 50%;  
+    }
+  }
+  @media (max-width: 720px){
+    .mapear{
+        flex-direction: column;
+    }
+    .mapear .colunm2 h3{
+        margin-top: 1.5rem;
+    }
+  }
+@media (max-width: 440px){
+    header{
+        height: 800px;
+    }
+    header .imgsolo{
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 372px;
+    }
+    header .container  .hero{
+        margin-top: 0px;
+    }
+    header .container .s-hero{
+        margin-top: 5rem;
+    }
+    header .container .hero h2{
+        margin-bottom: 1rem;
+    }
+    header .container .hero h4{
+        margin-top: 1rem;
+    }
+    header .container .hero h6{
+        color: var(--OFF-WHITE, #FFF);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+    }
+    .mapear{
+        flex-direction: column;
+        margin-top: 5rem; 
+    }
+    .mapear .colunm{
+        margin-bottom: 1.5rem;
+    }
+    .mapear .colunm h2{
+        font-size: 32px;
+    }
+    .mapear .colunm2 h3{
+        font-size: 18px;
+    }
+    .mapear .colunm2 h6{
+        font-size: 11px;
+    }
+    
+    .teste .slide-dot{
+        display: none;
+    }
+    .orangeplus .container .cacheado {
+        align-items: center;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-left: -4rem;
+    }
+    .orangeplus .container .cacheado div h2{
+        font-size: 24px;
+        margin-top: 10rem;
+    }
+   
+     .black2 label::before {
+        color: var(--IMPACT-ORANGE, #F24200);
+        content: '+';
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+    .black2 .center{
+        flex-direction: column;
+    }
+    .black2 .mid .accordion{
+        margin-top: 20rem;
+        margin-left: 1px;
+    }
+    .black2 .center .slideshow-container{
+        position: absolute;
+    }
+    .black2 .center .slideshow-container .slideshow{
+        margin-left: -10rem;
+        margin-top: 5rem;
+    }
+    .black2 .slide .img0{
+        width: 60%;
+      }
+    .black2 .slide .img3{
+        margin-left: 12.5rem;
+    }
+   
+    .slide-dots{
+        display: none;
+    }
+    .opers{
+        height: 100%;
+        margin-top: -1rem;
+        
+    }
+   
+}
+    @media (max-width: 400px){
+        header .container .hero h6{
+        font-size: 11px;
+        }
+        .mapear .colunm h2{
+        font-size: 30px;
+        }
+        .mapear .colunm2 h6{
+        font-size: 10px;
+        }
+        .black2 .slide .img3{
+            margin-left: 12rem;
+        }
+        .black2 .mid .accordion{
+            margin-top: 20rem;
+            margin-left: 0px;
+        }
+        .black2 .mid .accordion label{
+            font-size: 20px ;
+        }
+        .black2 .mid .accordion .content{
+            font-size: 14px ;
+        }
+}

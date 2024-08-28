@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="/path/to/your/font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>SALES OPERS</title>
+    <link rel="stylesheet" href="Assets/borna-medium-webfont.woff">
+    <link rel="stylesheet" href="Assets/borna-medium-webfont.woff_Zone.Identifier">
+    <link rel="stylesheet" href="Assets/borna-regular-webfont.ttf">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/responsiveS.css" />
-    <link rel="stylesheet" href="css/responsiveP.css" />
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/variables.css" />
 </head>
@@ -31,37 +33,28 @@
     <header>
         <div class="fath">
             <video class="vid" src="img/video-sales-1.mp4" autoplay muted loop></video>
-            <div class="container">
-                <div class="navbar">
-                    <div class="logo"><img src="img/header.svg"></div>
-                    <nav>
-                        <a href="index.html">INÍCIO</a>
-                        <a href="produtos.html">PRODUTOS</a>
-                        <a href="planos.html">PLANOS</a>
-                    </nav>
-                    <nav>
-                        <a class="help"><img src="img/inter.svg" alt="">AJUDA</a>
-                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
-                        <input class="btn2" type="button" value="LOGIN" />
-                    </nav>
-                    <div class="mobile-menu-icon">
-                        <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
-                    </div>
-                </div>
+            <img class="mobile" src="img/mobilesales.png" alt="">
+                <div class="container">
 
-                <div class="mobile-menu">
                     <nav>
-                        <a href="index.html">INÍCIO</a>
-                        <a href="servicos.html">SERVIÇOS</a>
-                        <a href="#">PLANOS</a>
-                    </nav>
-                    <nav>
-                        <a class="help"><img src="img/inter.svg" alt="">AJUDA</a>
-                        <input class="btn2" type="button" value="LOGIN" />
-                        <input class="btn" type="button" value="FALE COM MINHA EQUIPE DE VENDAS" />
-                    </nav>
-                </div>
+                        <ul class="navbar">
+                            <li class="logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+                            <input type="checkbox" id="check">
+                            <span class="menu">
 
+                                <li class=""><a href="index.html">INÍCIO</a></li>
+                                <li class=""><a href="produtos.html">PRODUTOS</a></li>
+                                <li class="left"><a href="planos.html">PLANOS</a></li>
+                                <li><a href="#" class="help"><img src="img/inter.svg" alt="">AJUDA</a></li>
+                                <li><input class="btn" type="button" value="FALE CONOSCO" /></li>
+                                <li><input class="btn2" type="button" value="LOGIN" /></li>
+                                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                            </span>
+                            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                        </ul>
+                    </nav>
+                    
                 <div class="s-hero">
                     <div class="hero">
                         <h2>Unificando Marketing e<br> Vendas com Inteligência<br> Artificial para Decisões<br>
@@ -72,7 +65,6 @@
 
                     <h6>A SalesOpers integra todos os seus dados de <br> marketing e vendas, oferecendo insights<br>
                         detalhados e personalizados para impulsionar o<br> crescimento do seu negócio.</h6>
-
                 </div>
             </div>
         </div>
@@ -150,7 +142,7 @@
     </div>
     <div class="container">
         <div class="complemento">
-            <h2>Sales Opers fazendo o trabalho por vocês!</h2>
+            <h2>Nossos benefícios que te auxiliam a crescer!</h2>
             <div data-aos="zoom-in" data-aos-duration="1500" class="banner">
                 <div class="picture">
                     <img class="banners" src="img/banner1.svg" alt="">
@@ -177,130 +169,7 @@
 
         </div>
     </div>
-    <div class="container">
-        <p class="solo">Conheça algumas de nossas integrações</p>
-    </div>
-
-    <div class="infinite">
-        <ul>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-            <li>
-                <img src="img/sebrae.svg" alt="" />
-            </li>
-        </ul>
-    </div>
+    
     <div class="laranja">
         <div class="container">
             <div class="space">
@@ -343,7 +212,7 @@
                     </div>
                 </div>
                 <div class="teste">
-                    <h3 id="text">Rastreie a origem exata do seu Lead</h3>
+                    <h3 id="text">Rastreie a origem exata do seu lead e entenda o que fazer para atingí-lo</h3>
                     <h5 id="subtext">Com o SalesOpers, você captura e rastreia com precisão a origem de cada lead, permitindo entender exatamente de onde vêm os seus melhores clientes (ICP). Isso ajuda a otimizar o uso do seu orçamento de marketing, reduzir o CAC e maximizar as vendas. Potencialize seus esforços e obtenha os melhores resultados.</h5>
 
                     <div class="arrows">
@@ -361,7 +230,7 @@
                             <input class="btn3" type="button" value="TRIAL"/><a class="vendas" href="#"><img src="img/chat.svg" alt="">Fale com a equipe de vendas</a>          
                 </div>
             </div>
-            <div class="teste">
+            <div class="botao">
                 <div data-aos="fade-up" data-aos-duration="2000" class="slide-dots">
                     <a id="slide-features-dot" class="slide-dot slide-features-item-dot"
                         onclick="change(0, 'slide-features')"></a>
@@ -391,54 +260,56 @@
                     <ul class="acordion">
                         <li>
                             <input type="radio" name ="acordion" id="one" checked>
-                            <label for="one">Como a análise preditiva da SalesOpers funciona?</label>
+                            <label for="one">O que é a SalesOpers?</label>
                             <div class="contente">
-                                <p>A análise preditiva da SalesOpers utiliza algoritmos de Inteligência Artificial
-                                    para identificar padrões de comportamento ao longo da jornada de vendas. Com base nesses padrões,
-                                    prevemos as próximas ações dos clientes e fornecemos recomendações personalizadas para cada etapa do funil,
-                                    aumentando as chances de conversão.</p>
+                                <p>A SalesOpers é uma plataforma de inteligência de vendas que ajuda empresas a rastrear e
+                                     analisar a jornada de seus leads, desde o primeiro contato até o fechamento. Utilizando tecnologia avançada,
+                                      oferecemos insights preditivos e otimizamos suas campanhas de marketing em tempo real,
+                                       garantindo que você maximize seus resultados e reduza o CAC.</p>
                             </div>
                         </li>
                         <li>
                             <input type="radio" name ="acordion" id="two">
-                            <label for="two">Como a SalesOpers verifica os ajustes realizados?</label>
+                            <label for="two">A SalesOpers é fácil de integrar com meu CRM atual?</label>
                             <div class="contente">
-                                <p>Após fornecer sugestões baseadas em nossos insights, a SalesOpers acompanha a implementação dessas mudanças e analisa seus impactos.
-                                     Isso garante que as ações realizadas estão realmente melhorando os resultados e permite ajustes contínuos para maximizar o desempenho.</p>
+                                <p>A SalesOpers foi projetada para ser compatível com os principais CRMs do mercado.
+                                     Nossa equipe de suporte está disponível para ajudar na integração e
+                                      garantir que você comece a obter valor da plataforma o mais rápido possível.</p>
                             </div>
                         </li>
                         <li>
                             <input type="radio" name ="acordion" id="three">
-                            <label for="three">A SalesOpers é fácil de integrar com meu CRM atual?</label>
+                            <label for="three">A SalesOpers oferece suporte ao cliente?</label>
                             <div class="contente">
-                                <p>Sim! A SalesOpers foi projetada para ser compatível com os principais CRMs do mercado.
-                                     Nossa equipe de suporte está disponível para ajudar na integração e garantir que você comece a obter valor da plataforma o mais rápido possível.</p>
+                                <p>Sim! Nosso time de suporte está disponível para ajudar você em todas as etapas,
+                                     desde a configuração inicial até o uso contínuo da plataforma. Oferecemos suporte via chat,
+                                      e-mail e telefone, garantindo que suas dúvidas sejam resolvidas rapidamente.</p>
                             </div>
                         </li>
                         <li>
                             <input type="radio" name ="acordion" id="four">
-                            <label for="four">A SalesOpers oferece suporte ao cliente?</label>
+                            <label for="four">A SalesOpers pode melhorar a eficiência do meu time de vendas?</label>
                             <div class="contente">
-                                <p>Sim! Nosso time de suporte está disponível para ajudar você em todas as etapas, 
-                                    desde a configuração inicial até o uso contínuo da plataforma. Oferecemos suporte via chat, e-mail e telefone, 
-                                    garantindo que suas dúvidas sejam resolvidas rapidamente.</p>
+                                <p>Sim! Com os insights gerados pela SalesOpers, seu time de vendas pode focar seus esforços nos leads com maior potencial de conversão.
+                                     A plataforma fornece recomendações personalizadas para cada etapa do funil de vendas,
+                                      ajudando sua equipe a agir de maneira mais eficaz e a fechar negócios com mais rapidez.</p>
                             </div>
                         </li>
                         <li>
                             <input type="radio" name ="acordion" id="five">
-                            <label for="five">Como a SalesOpers ajuda a alinhar marketing e vendas para resultados mais eficazes?</label>
+                            <label for="five">Como posso começar a usar a SalesOpers?</label>
                             <div class="contente">
-                                <p>A SalesOpers cria uma ponte entre os departamentos de marketing e vendas ao fornecer dados precisos sobre a jornada do lead. Com insights compartilhados,
-                                     ambas as equipes podem alinhar suas estratégias, focando nos leads mais promissores e
-                                     ajustando suas abordagens para maximizar os resultados. Esse alinhamento torna todo o processo de geração e conversão de leads mais coeso e eficiente.</p>
+                                <p>Para começar a usar a SalesOpers, basta entrar em contato conosco para agendar uma demonstração gratuita.
+                                     Nossa equipe vai guiá-lo através das funcionalidades da plataforma e ajudar a implementar a solução em sua empresa.</p>
                             </div>
                         </li>
                         <li>
                             <input type="radio" name ="acordion" id="six">
-                            <label for="six">De que maneira a SalesOpers utiliza os dados para ajustar o ICP do cliente?</label>
+                            <label for="six">Qual o diferencial da SalesOpers em relação a outras plataformas de inteligência de vendas?</label>
                             <div class="contente">
-                                <p>A SalesOpers analisa continuamente os dados dos leads que entram em contato com sua empresa e compara esses dados com os resultados de vendas. Ao identificar quais leads têm maior probabilidade de converter,
-                                     nossa plataforma ajusta automaticamente o ICP, ajudando a otimizar os esforços de marketing e vendas para atrair os clientes mais alinhados ao seu negócio.</p>
+                                <p>A SalesOpers se destaca pela combinação de rastreamento preciso da origem dos leads,
+                                     análise preditiva avançada, otimização em tempo real e verificação constante dos ajustes realizados. 
+                                     Isso permite uma abordagem holística e orientada a resultados, que maximiza a eficiência das suas campanhas de marketing e vendas.</p>
                             </div>
                         </li>
                     </ul>

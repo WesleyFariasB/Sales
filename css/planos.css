@@ -1,0 +1,49 @@
+header{
+    background: var(--ALL-BLACK, #101010);
+}
+
+.start{
+    background: var(--ALL-BLACK, #101010);
+}
+.start .watch{
+    padding-top: 10rem;
+}
+.start .watch h2{
+    color: var(--IMPACT-ORANGE, #F24200);
+}
+.start .watch h6{
+    padding-top: 1.5rem;
+    font-size: 18px;
+}
+.planos {
+    background: var(--ALL-BLACK, #101010);
+    height: 600px;
+}
+.comunication{
+    background: var(--OFF-WHITE, #FFF);
+}
+.comunication .phone{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.comunication .phone div{
+    max-width: 33%;
+}
+.comunication .phone h2{
+    color: #101010;
+    padding-bottom: 1rem;
+}
+.comunication .phone h3{
+    color: var(--OFF-GRAY, #979696);
+}
+.young{
+    width: 346px;
+    height: 317px;
+    
+}
+.slide-dots{
+    margin-top: -0.1rem;
+}

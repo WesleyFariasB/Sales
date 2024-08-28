@@ -12,7 +12,7 @@ setInterval(() => {
     change(currentAboutSlideOrder, 'slide-about','accordion-about')
     currentAboutSlideOrder++;
   }
-}, 5000)
+}, 10000)
 
 
 /**
